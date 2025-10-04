@@ -1,33 +1,22 @@
 ---
- const {image,title} = Astro.props;
-
+const { image, title } = Astro.props;
 ---
 
+<!-- Card -->
+<div
+  style="background-color: rgb(246, 245, 241);"
+  class="w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)] relative"
+>
+  <div class="relative h-64 rounded-lg shadow-lg">
+    <img src={image} alt="Card Image" class="object-cover w-full h-full" />
 
-
-
-
-
-
-
-
-  <!-- Card -->
-  <div style="background-color: rgb(246, 245, 241);" class="w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)] relative">
-    <div class="relative h-64  rounded-lg shadow-lg">
-      <img src={image} alt="Card Image" class="object-cover w-full h-full" />
-      
-        <h2 data-aos="fade-up" data-aos-delay="10"class="text-black text-4xl font-semibold">{title} <h2>
-      </div>
-    </div>
+    <h2
+      data-aos="fade-up"
+      data-aos-delay="10"
+      class="text-black text-4xl lg:text-2xl font-semibold"
+    >
+      {title}
+      <h2></h2>
+    </h2>
   </div>
-
-  
- 
-
-
-
-
-
-  
-
-
+</div>
