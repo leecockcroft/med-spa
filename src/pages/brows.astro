@@ -1,0 +1,44 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Hero from "../components/Hero.astro";
+import Services from "../components/Services.astro";
+import ContactForm from "../components/ContactForm.astro";
+import Services from "../components/Services.astro";
+import Footer from "../components/Footer.astro";
+import json from "../components/services.json";
+import Filter from "../components/Filter.astro";
+import "../styles/global.css";
+
+let activeFilter = "all";
+---
+
+<Layout>
+  <Navbar />
+  <Filter />
+  <section class="bg-[#f6f5f1] py-16 px-6 text-center">
+    <h2
+      class="text-3xl font-semibold tracking-wide text-gray-800 uppercase font-tenor"
+    >
+      OUR SERVICES
+    </h2>
+    <p class="mt-4 text-lg text-gray-600 italic">
+      A renewing experience awaits you.
+    </p>
+  </section>
+  <div class="flex flex-wrap justify-center gap-6 px-4">
+    <Services
+      title="Brow / Lashes Tint Tinte cejas / pestañas"
+      image="../images/a2560888-de37-4bd4-9acc-3b6a41843fc7.webp"
+      description={`
+      <p>(EN) Our skilled technician will carefully select a shade that complements your hair color tone, giving your brows / lashes a fuller and more pronounced look.</p>
+      <p>(ES) Nuestro técnico capacitado selecionará cuidadosamente un tono que complemente el color de su cabello y el tono de su piel, dándole a sus cejas / pestañas una apariencia más completa y pronunciada.</p>
+`}
+      pricehome="20€"
+      pricesalon=""
+      filter="brows"
+    />
+  </div>
+
+  <Footer />
+</Layout>

@@ -6,6 +6,7 @@ import Services from "../components/Services.astro";
 import ContactForm from "../components/ContactForm.astro";
 import Footer from "../components/Footer.astro";
 import ServiceItems from "../components/ServiceItems.astro";
+import Aboutme from "../components/Aboutme.astro";
 ---
 
 <Layout style="background-color: rgb(246, 245, 241);">
@@ -13,7 +14,7 @@ import ServiceItems from "../components/ServiceItems.astro";
   <Hero />
 
   <div
-    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14 justify-items-center"
+    class="mb-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14 justify-items-center"
   >
     <ServiceItems
       image="../images/7ff5db47-0fd9-4c8c-8c93-b4640ab5ce8b.webp"
@@ -26,6 +27,9 @@ import ServiceItems from "../components/ServiceItems.astro";
     />
   </div>
 
+  <div class="pt-5">
+    <Aboutme />
+  </div>
   <ContactForm />
   <Footer />
 </Layout>
