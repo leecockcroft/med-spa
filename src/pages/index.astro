@@ -5,12 +5,20 @@ import Hero from '../components/Hero.astro';
 import Services from '../components/Services.astro';
 import ContactForm from '../components/ContactForm.astro';
 import Footer from '../components/Footer.astro';
+import ServiceItems from '../components/ServiceItems.astro';
 ---
 
 <Layout>
 <Navbar/>
   <Hero />
   <Services />
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14 justify-items-center">
+  <ServiceItems image ="../public/images/7ff5db47-0fd9-4c8c-8c93-b4640ab5ce8b.webp" title="Massage"/>
+  <ServiceItems image="../public/images/IMG_4794.webp" title="Ritual Spa"/>
+  <ServiceItems image="../public/images/IMG_4786.webp" title="Manicure and Pedicure"/>
+  </div>
+  
+  
   <ContactForm />
   <Footer />
 </Layout>

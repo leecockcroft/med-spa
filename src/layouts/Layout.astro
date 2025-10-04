@@ -1,5 +1,6 @@
 ---
 const { children } = Astro.props;
+import 'aos/dist/aos.css';
 ---
 
 <!doctype html>
@@ -8,15 +9,23 @@ const { children } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>MedSpa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   </head>
 <script type="module" src="/src/scripts/showPanel.js"></script>
+<script src="https://unpkg.com/taos@latest/dist/taos.js"></script>
+
   <body class="bg-white text-gray-800 scroll-pt-[80px]">
    <slot/>
 
 
 
- 
+ <script>
+  import AOS from 'aos';
+  AOS.init();
+</script>
+
 
   </body>
 </html>
