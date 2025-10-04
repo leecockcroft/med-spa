@@ -9,7 +9,7 @@ section{
   background:rgb(246, 245, 241);
 }
 .panel{
-    display:none;
+    /* display:none; */
     max-width:300px;
 }
 

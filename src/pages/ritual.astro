@@ -1,0 +1,88 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Hero from "../components/Hero.astro";
+import Services from "../components/Services.astro";
+import ContactForm from "../components/ContactForm.astro";
+import Services from "../components/Services.astro";
+import Footer from "../components/Footer.astro";
+import json from "../components/services.json";
+import Filter from "../components/Filter.astro";
+import "../styles/global.css";
+
+let activeFilter = "all";
+---
+
+<Layout>
+  <Navbar />
+  <Filter />
+  <section class="bg-[#f6f5f1] py-16 px-6 text-center">
+    <h2
+      class="text-3xl font-semibold tracking-wide text-gray-800 uppercase font-tenor"
+    >
+      OUR SERVICES
+    </h2>
+    <p class="mt-4 text-lg text-gray-600 italic">
+      A renewing experience awaits you.
+    </p>
+  </section>
+  <div class="flex flex-wrap justify-center gap-6 px-4">
+    <Services
+      title="Velvet Skin Ritual"
+      image="../images/3dc5ae26-2dd3-4125-9c9c-1cbade749899.jpeg"
+      description={`<p>Recognize your body as the most precious possession you have—and you cannot escape it. The ancient royals understood this well: they honored their bodies through rituals of cleansing and care, as a sacred gesture of gratitude—a simple, yet profound 'thank you.'</p>
+  <ul class="list-disc list-inside mt-2 text-left">
+    <li>Full body exfoliation</li>
+    <li>Face soft peeling</li>
+    <li>Face & Neck Glow Mask</li>
+    <li>Rich body butter effleurage</li>
+  </ul>`}
+      pricehome="90 min · 150€"
+      filter="ritual"
+    />
+
+    <Services
+      title="IMPERIAL GRACE"
+      image="../images/3c0f19a7-38da-4acf-ab22-d070192c534f.jpeg"
+      description={`<p>
+  Beauty ritual has nothing to do with "beauty"—it's about connection with yourself by consciously caring for your body. The beauty resides in the act and intention. I call it "Grace."
+</p>
+<ul class="list-disc list-inside mt-2 text-left">
+  <li>Velvet body scrub</li>
+  <li>40-minute aromatherapy massage</li>
+  <li>Facial deep moisture or Purity treatment</li>
+  <li>Body wrap</li>
+</ul>`}
+      pricehome="120 min · 220€"
+      filter="ritual"
+    />
+
+    <Services
+      title="SILKY TOUCH"
+      image="../images/66290df9-6298-4597-82c2-e0183227cd1f.jpeg"
+      description="Full treatment manicure and pedicure spa. This treatment begins with a warm aromatic soak, cleansing, gentle exfoliation, and cuticle care. Nails are meticulously shaped, buffed, and polished to perfection, while a silky massage with nourishing oils leaves hands and feet feeling velvety smooth and light. "
+      pricehome="105 min · 170€"
+      filter="ritual"
+    />
+
+    <Services
+      title="BACK TREATMENT"
+      image="../images/fbb4f6f3-0f2d-4c7b-8479-0657ef956b24_1.jpeg"
+      description={`<p>
+  you surely remember that stunning woman with the backless dress, her skin smooth, glowing, and radiant.
+We’ve all seen her at least once!"
+</p>
+<p>We’ve all seen her at least once!</p>
+<ul class="list-disc list-inside mt-2 text-left">
+  <li>30 minutes of warm candle massage</li>
+  <li>Deep exfoliation with black soap & Kessa glove, creamy scrub, or nourishing oils</li>
+  <li>A purifying or deep hydration mask</li>
+ 
+</ul>`}
+      pricehome="105 min · 170€"
+      filter="ritual"
+    />
+  </div>
+
+  <Footer />
+</Layout>

@@ -1,0 +1,86 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Hero from "../components/Hero.astro";
+import Services from "../components/Services.astro";
+import ContactForm from "../components/ContactForm.astro";
+import Services from "../components/Services.astro";
+import Footer from "../components/Footer.astro";
+import json from "../components/services.json";
+import Filter from "../components/Filter.astro";
+import "../styles/global.css";
+
+let activeFilter = "all";
+---
+
+<Layout>
+  <Navbar />
+  <Filter />
+  <section class="bg-[#f6f5f1] py-16 px-6 text-center">
+    <h2
+      class="text-3xl font-semibold tracking-wide text-gray-800 uppercase font-tenor"
+    >
+      OUR SERVICES
+    </h2>
+    <p class="mt-4 text-lg text-gray-600 italic">
+      A renewing experience awaits you.
+    </p>
+  </section>
+  <div class="flex flex-wrap justify-center gap-6 px-4">
+    <Services
+      title="Back, Neck, Shoulders & Head massage"
+      image="../images/7ff5db47-0fd9-4c8c-8c93-b4640ab5ce8b.webp"
+      description="Special signature massage for the overthinkers and hyperactive, silences the mind and immediately relieves headaches, as if freed from a heavy weight 45mn:"
+      pricehome="Home: 45 min – 100€"
+      pricesalon="Salon: 45 min – 65€"
+      filter="massage"
+    />
+
+    <Services
+      title="Kobido Japanese Facial Massage"
+      image="..images/45b0987c-ad77-4f8b-85c1-e00628c3d898.jpeg"
+      description="An ancestral practice that treats the face as a whole—muscles, blood system, lymphatic flow, and bones. Enhances collagen production, decongests puffiness, and detoxifies. Includes neck and bust."
+      pricehome="Home: 60 min – 110€, 90 min – 150€"
+      pricesalon="Salon: 60 min – 80€, 90 min – 110€"
+      filter="massage"
+    />
+
+    <Services
+      title="Sport Dynamic"
+      image="../images/a0ccfe6c-9b61-44f0-8c34-856cbc6aa7fc.webp"
+      description="An intensive massage to improve muscle flexibility, increase blood flow, and reduce muscle tension. Ideal as part of an athlete’s regular training regimen."
+      pricehome="Home: 30 min – 70€, 60 min – 140€, 90 min – 200€"
+      pricesalon="Salon: 30 min – 55€, 60 min – 100€, 90 min – 145€"
+      filter="massage"
+    />
+
+    <Services
+      title="Brasilian Bodycontour"
+      image="../images/694585cb-e53f-41fe-b98e-087cb08c953e.webp"
+      description="Stimulates circulation and promotes lymphatic drainage. Uses gentle, rhythmic pressure to detoxify the body, reduce bloating, and leave you feeling energized."
+      pricehome="Home: 30 min – 65€, 60 min – 130€, 90 min – 190€"
+      pricesalon="Salon: 30 min – 50€, 60 min – 95€, 90 min – 135€"
+      filter="massage"
+    />
+
+    <Services
+      title="Deep Tissues"
+      image="../images/0646cf9e-1f8d-4e84-bac8-64aa0aa10b7d.webp"
+      description="Particularly beneficial to ease stiffness and relieve deep tension. Uses medium to strong pressure to reach deeplayers of muscles for total rejuvenation."
+      pricehome="Home: 30 min – 65€, 60 min – 120€, 90 min – 180€"
+      pricesalon="Salon: 30 min – 45€, 60 min – 85€, 90 min – 120€"
+      filter="massage"
+    />
+
+    <Services
+      title="Pure Relaxation"
+      image="../images/2a1274c8-6b53-439f-9440-ea06d1810918.webp"
+      description="Soothing massage,designed to melt away stress and restore deep calm. Using gentle pressure, slow flowing movements ideal escape from daily stress."
+      pricehome="Home: 30 min – 65€, 60 min – 120€, 90 min – 180€"
+      pricesalon="Salon: 30 min – 40€, 60 min – 75€, 90 min – 110€"
+      filter="massage"
+    />
+  </div>
+
+  <Footer />
+</Layout>

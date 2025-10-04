@@ -1,78 +1,33 @@
 <!-- CSS for toggling panels -->
-
-
 <div class="bg-blue-50 py-10 sm:py-16 md:py-20 text-center">
   <!-- Labels -->
   <div class="flex flex-wrap justify-center gap-4 my-6 sm:my-8">
-    <button id="massage" class="px-4 py-2 bg-white border rounded hover:bg-blue-100 transition">Massage</button>
-    <button id="ritual" onclick="showPanel('ritual')" class="px-4 py-2 bg-white border rounded hover:bg-blue-100 transition">Ritual</button>
-    <button onclick="showPanel('brows')" class="px-4 py-2 bg-white border rounded hover:bg-blue-100 transition">Brows</button>
-    <button onclick="showPanel('panel4')" class="px-4 py-2 bg-white border rounded hover:bg-blue-100 transition">Panel 4</button>
+    <a
+      href="/massage"
+      id="massage"
+      class="px-4 py-2 bg-white border rounded hover:bg-blue-100 transition"
+      >Massage</a
+    >
+    <a
+      href="ritual"
+      id="ritual"
+      class="px-4 py-2 bg-white border rounded hover:bg-blue-100 transition"
+      >Ritual</a
+    >
+    <a
+      id="brows"
+      class="px-4 py-2 bg-white border rounded hover:bg-blue-100 transition"
+      >Brows</a
+    >
+    <a
+      id="manicure"
+      class="px-4 py-2 bg-white border rounded hover:bg-blue-100 transition"
+      >Manicure & Pedicure</a
+    >
+    <a
+      id="waxing"
+      class="px-4 py-2 bg-white border rounded hover:bg-blue-100 transition"
+      >waxing</a
+    >
   </div>
 </div>
-
-
-
-
-<script>
-const ritual = document.getElementById('ritual');
-const massage = document.getElementById('massage');
-ritual.addEventListener('click', () => {
-
- function showPanel(name) {
-  const panels = document.querySelectorAll('.panel');
-  panels.forEach(panel => panel.style.display = 'none');
-
-  const target = document.querySelectorAll(`.panel.${name}`);
-  target.forEach(panel => panel.style.display = 'block');
-  if (target) {
-    target.style.display = 'block';
-  }
-}
-
-showPanel('ritual')
-
-});
-
-
-massage.addEventListener('click', () => {
-
- function showPanel(name) {
-  const panels = document.querySelectorAll('.panel');
-  panels.forEach(panel => panel.style.display = 'none');
-
-  const target = document.querySelectorAll(`.panel.${name}`);
-    target.forEach(panel => panel.style.display = 'block');
-  if (target) {
-    target.style.display = 'block';
-  }
-}
-
-showPanel('massage')
-
-});
-
-
-//   function showPanel(name) {
-//     const panels = document.querySelectorAll('.panel');
-//     panels.forEach(panel => {
-//       panel.style.display = 'none';
-//     });
-
-//     const target = document.querySelector(`.${name}`);
-//     if (target) {
-//       target.style.display = 'block';
-//     }
-//   }
-
-//   // Optional: show default panel on load
-//   document.addEventListener('DOMContentLoaded', () => {
-
-
-
-
-
-
-//     showPanel('massage');
-//   });
-</script>
