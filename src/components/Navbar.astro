@@ -1,0 +1,77 @@
+<nav class="bg-white shadow-md fixed w-full z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16 items-center">
+      <!-- Logo -->
+      <div class="flex-shrink-0">
+        <a href="/">
+          <img src="/logo.png" alt="MedSpa Logo" class="h-10 w-auto" />
+        </a>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden md:flex space-x-8 items-center">
+        <!-- Services Dropdown -->
+        <div class="relative">
+          <button
+            onclick="document.getElementById('services-dropdown').classList.toggle('hidden')"
+            class="text-gray-700 hover:text-blue-600 font-medium focus:outline-none"
+          >
+            Services
+          </button>
+          <div
+            id="services-dropdown"
+            class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md hidden z-10"
+          >
+            <a href="/facials" class="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50">Facials</a>
+            <a href="/massage" class="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50">Massage</a>
+            <a href="/laser" class="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50">Laser Therapy</a>
+          </div>
+        </div>
+
+        <a href="/about" class="text-gray-700 hover:text-blue-600 font-medium">About</a>
+        <a href="/contact" class="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
+      </div>
+
+      <!-- CTA Button -->
+      <div class="hidden md:block">
+        <a href="/book" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">Book Now</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden">
+        <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden hidden px-4 pt-2 pb-4 space-y-2">
+    <a href="/facials" class="block text-gray-700 hover:text-blue-600">Facials</a>
+    <a href="/massage" class="block text-gray-700 hover:text-blue-600">Massage</a>
+    <a href="/laser" class="block text-gray-700 hover:text-blue-600">Laser Therapy</a>
+    <a href="/about" class="block text-gray-700 hover:text-blue-600">About</a>
+    <a href="/contact" class="block text-gray-700 hover:text-blue-600">Contact</a>
+    <a href="/book" class="block bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Book Now</a>
+  </div>
+
+  <script>
+    // Toggle mobile menu
+    document.getElementById('mobile-menu-button').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+
+    // Optional: Close dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+      const dropdown = document.getElementById('services-dropdown');
+      const button = e.target.closest('button');
+      if (!dropdown.contains(e.target) && button?.innerText !== 'Services') {
+        dropdown.classList.add('hidden');
+      }
+    });
+  </script>
+</nav>

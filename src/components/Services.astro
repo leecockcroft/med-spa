@@ -1,0 +1,22 @@
+---
+const {title,image,description,pricehome,pricesalon,filter} = Astro.props;
+
+---
+
+  <section class={`w-full max-w-[300px] flex-shrink-0 py-6 ${filter} panel`}>
+   <img src={image} alt={title} class="w-full h-[200px] object-cover rounded shadow mb-4" />
+
+    <h2 class="text-xl font-semibold text-center mt-4 mb-2">{title}</h2>
+    <div class="p-4 border rounded shadow">
+      <p>{description}</p>
+      <h3 class="text-lg font-bold mt-4 mb-2">Prices</h3>
+      <ul class="list-disc list-inside">
+        <li><strong>{pricehome}</strong></li>
+        <li><strong>{pricesalon}</strong></li>
+      </ul>
+    </div>
+  </section>
+
+
+</div>
+

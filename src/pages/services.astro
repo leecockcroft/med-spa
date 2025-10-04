@@ -1,0 +1,57 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import Services from '../components/Services.astro';
+import ContactForm from '../components/ContactForm.astro';
+import Services from '../components/Services.astro';
+import Footer from '../components/Footer.astro';
+import json from '../components/services.json';
+import Filter from '../components/Filter.astro';
+import "../styles/global.css";
+
+
+let activeFilter = 'all';
+---
+
+<Layout>
+
+    
+<Navbar/>
+<Filter/>
+
+<div class="flex flex-wrap justify-center gap-6 px-4 ">
+  
+
+<Services title="Back, Neck, Shoulders & Head massage" image ="../public/images/7ff5db47-0fd9-4c8c-8c93-b4640ab5ce8b.webp" 
+description="Special signature massage for the overthinkers and hyperactive, silences the mind and immediately relieves headaches, as if freed from a heavy weight 45mn:" 
+pricehome="Home: 45 min – 100€" 
+pricesalon="Salon: 45 min – 65€"
+filter="ritual"/>
+
+
+<Services title="Kobido Japanese Facial Massage" image ="../public/images/45b0987c-ad77-4f8b-85c1-e00628c3d898.jpeg" 
+    description="An ancestral practice that treats the face as a whole—muscles, blood system, lymphatic flow, and bones. Enhances collagen production, decongests puffiness, and detoxifies. Includes neck and bust." 
+    pricehome="Home: 60 min – 110€, 90 min – 150€" 
+    pricesalon="Salon: 60 min – 80€, 90 min – 110€"
+    filter="massage"/>
+
+
+
+
+    <Services title="Kobido Japanese Facial Massage" image ="../public/images/45b0987c-ad77-4f8b-85c1-e00628c3d898.webp" 
+                description="An ancestral practice that treats the face as a whole—muscles, blood system, lymphatic flow, and bones. Enhances collagen production, decongests puffiness, and detoxifies. Includes neck and bust.." 
+    pricehome="Home: 60 min – 110€, 90 min – 150€" 
+    pricesalon="Salon: 60 min – 80€, 90 min – 110€"
+     filter="massage"/>
+
+
+
+
+
+
+</div>
+
+
+  <Footer />
+</Layout>

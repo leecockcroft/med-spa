@@ -1,0 +1,14 @@
+.panel{
+    display:none;
+    max-width:300px;
+}
+
+img{
+  max-width:100%;
+}
+
+.hero-section{
+  justify-content: space-around;
+    max-width: 1000px;
+    margin: auto;
+}

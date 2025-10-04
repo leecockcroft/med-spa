@@ -1,0 +1,66 @@
+[
+  {
+    "Title": "Pure Relaxation",
+    "Image": "wix:image://v1/9d063b_f591d9a80de6489980ad4ff84b7880dd~mv2.webp/2a1274c8-6b53-439f-9440-ea06d1810918.webp#originWidth=1158&originHeight=2048",
+    "Active": "",
+    "Services (List)": "/services/",
+    "Category": "71241a46-9bed-4d27-9f69-571416583237",
+    "Rich Text": "Soothing massage, designed to melt away stress and restore deep calm. Using gentle pressure, slow flowing movements ideal escape from daily stress.\n<br>\n<strong>Prices:</strong>\n<br>\n<strong>Home: 30 min – 65€, 60 min – 120€, 90 min – 180€</strong>\n<br>\n<strong>Salon: 30 min – 40€, 60 min – 75€, 90 min – 110€</strong>\n<br>\n<br>\n<br>\n<br>"
+  },
+  {
+    "Title": "Full bikini | Bikini completo",
+    "Image": "",
+    "Active": true,
+    "Services (List)": "/services/",
+    "Category": "71241a46-9bed-4d27-9f69-571416583237",
+    "Rich Text": "<strong>Price</strong>\n<br>\n<strong>35 €</strong>"
+  },
+  {
+    "Title": "Tonic Draining",
+    "Image": "wix:image://v1/9d063b_b178e8dd67a1435185be55f8d7ae2503~mv2.webp/3c0f19a7-38da-4acf-ab22-d070192c534f.webp#originWidth=685&originHeight=1024",
+    "Active": true,
+    "Services (List)": "/services/",
+    "Category": "71241a46-9bed-4d27-9f69-571416583237",
+    "Rich Text": "Stimulates circulation and promotes lymphatic drainage. Uses gentle, rhythmic pressure to detoxify the body, reduce bloating, and leave you feeling energized.\n<br>\n<strong>Prices</strong>:\n<ul class=\"font_8\">\n  <li>Home: 30 min – <strong>65€</strong>, 60 min – <strong>130€</strong>, 90 min – <strong>190€</strong></li>\n  <li>Salon: 30 min – <strong>50€</strong>, 60 min – <strong>95€</strong>, 90 min – <strong>135€</strong></li>\n</ul>"
+  },
+  {
+    "Title": "Back, Neck, Shoulders & Head massage",
+    "Image": "wix:image://v1/9d063b_a6a256b0958c41bb860592d02184323f~mv2.webp/7ff5db47-0fd9-4c8c-8c93-b4640ab5ce8b.webp#originWidth=1172&originHeight=2048",
+    "Active": true,
+    "Services (List)": "/services/",
+    "Category": "71241a46-9bed-4d27-9f69-571416583237",
+    "Rich Text": "Special signature massage for the overthinkers and hyperactive, silences the mind and immediately relieves headaches, as if freed from a heavy weight 45mn:\n<br>\n<strong>Prices</strong>:\n<ul class=\"font_8\">\n  <li><strong>Home: 45 min – 100€</strong></li>\n  <li><strong>Salon: 45 min – 65€</strong></li>\n</ul>"
+  },
+  {
+    "Title": "Deep Tissue",
+    "Image": "wix:image://v1/9d063b_6fa9e92c0fee4c50b7265bcd2f760747~mv2.webp/0646cf9e-1f8d-4e84-bac8-64aa0aa10b7d.webp#originWidth=1186&originHeight=2048",
+    "Active": "",
+    "Services (List)": "/services/",
+    "Category": "71241a46-9bed-4d27-9f69-571416583237",
+    "Rich Text": "Particularly beneficial to ease stiffness and relieve deep tension. Uses medium to strong pressure to reach deep layers of muscles for total rejuvenation.\n<br>\n<strong>Prices</strong>:\n<ul class=\"font_8\">\n  <li>Home: 30 min – <strong>65€</strong>, 60 min – <strong>120€</strong>, 90 min – <strong>180€</strong></li>\n  <li>Salon: 30 min – <strong>45€</strong>, 60 min – <strong>85€</strong>, 90 min – <strong>120€</strong></li>\n</ul>"
+  },
+  {
+    "Title": "Sport Dynamic",
+    "Image": "wix:image://v1/9d063b_7513e2b4ed4949358b0190a6dc835c8b~mv2.webp/a0ccfe6c-9b61-44f0-8c34-856cbc6aa7fc.webp#originWidth=1080&originHeight=1080",
+    "Active": true,
+    "Services (List)": "/services/",
+    "Category": "71241a46-9bed-4d27-9f69-571416583237",
+    "Rich Text": "An intensive massage to improve muscle flexibility, increase blood flow, and reduce muscle tension. Ideal as part of an athlete’s regular training regimen.\n<br>\n<strong>Prices</strong>:\n<ul class=\"font_8\">\n  <li>Home: 30 min – <strong>70€</strong>, 60 min – <strong>140€</strong>, 90 min – <strong>200€</strong></li>\n  <li>Salon: 30 min – <strong>55€</strong>, 60 min – <strong>100€</strong>, 90 min – <strong>145€</strong></li>\n</ul>"
+  },
+  {
+    "Title": "Kobido Japanese Facial Massage",
+    "Image": "wix:image://v1/9d063b_5d1787ff3f1a46ca98f12a6d63643f6f~mv2.webp/45b0987c-ad77-4f8b-85c1-e00628c3d898.webp#originWidth=1152&originHeight=2048",
+    "Active": true,
+    "Services (List)": "/services/",
+    "Category": "71241a46-9bed-4d27-9f69-571416583237",
+    "Rich Text": "An ancestral practice that treats the face as a whole—muscles, blood system, lymphatic flow, and bones. Enhances collagen production, decongests puffiness, and detoxifies. Includes neck and bust.\n<br>\n<strong>Prices</strong>:\n<ul class=\"font_8\">\n  <li>Home: 60 min – <strong>110€</strong>, 90 min – <strong>150€</strong></li>\n  <li>Salon: 60 min – <strong>80€</strong>, 90 min – <strong>110€</strong></li>\n</ul>"
+  },
+  {
+    "Title": "Massage",
+    "Image": "https://static.wixstatic.com/media/4404bde9c89a4d4e89059084f0005674.jpg",
+    "Active": true,
+    "Services (List)": "/services/",
+    "Category": "71241a46-9bed-4d27-9f69-571416583237",
+    "Rich Text": ""
+  }
+]
