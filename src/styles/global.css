@@ -4,8 +4,9 @@
   font-family: 'Tenor Sans', 'Tenor Sans Placeholder', sans-serif;
 }
 
-body{
+section{
   font-family: 'Tenor Sans', 'Tenor Sans Placeholder', sans-serif;
+  background:rgb(246, 245, 241);
 }
 .panel{
     display:none;
