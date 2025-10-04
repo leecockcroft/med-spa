@@ -22,3 +22,10 @@ img{
     max-width: 1000px;
     margin: auto;
 }
+
+
+.image-service-class {
+      width: 100%;
+    height: 300px;
+    object-fit: cover;
+}

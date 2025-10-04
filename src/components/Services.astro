@@ -18,7 +18,7 @@ const {
   class={`w-full max-w-[300px] flex-shrink-0 py-6 ${filter} panel`}
 >
   <img
-    class={hidden}
+    class={`image-service-class ${hidden ? "hidden" : ""}`}
     src={image}
     alt={title}
     class="w-full h-[200px] object-cover rounded shadow mb-4"
