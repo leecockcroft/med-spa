@@ -22,7 +22,18 @@ img{
     max-width: 1000px;
     margin: auto;
 }
-
+.contact-cta {
+    background: #daddd7;
+    color: rgb(71, 66, 64);
+    border-radius: 5em;
+  }
+/* #daddd7;
+    --token-99429804-98c0-4655-9081-c13b741ef6ff: #f6f5f1;
+    --token-3aacd9fc-9d17-4f1b-a370-e01b5a3a29ad: #474240;
+    --token-7dbd25c2-9068-4a0d-b428-7da190fa987c: #ceb8bb;
+    --token-16e7a6ce-6957-4ce6-8566-b8f0e916e937: #ceb07b;
+    --token-773e0f49-2987-4cb3-a66b-9f5a95e6a3c4: #c0b7a4;
+    --token-f4128731-c451-4d6c-9639-3707b4b22f56: #6e540a; */
 
 .image-service-class {
       width: 100%;

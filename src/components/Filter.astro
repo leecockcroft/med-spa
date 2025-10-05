@@ -8,7 +8,7 @@ const { active } = Astro.props;
       href="/massage"
       class={`px-4 py-2 border rounded transition uppercase ${
         active === "massage"
-          ? "bg-indigo-600 text-white"
+          ? "contact-cta "
           : "bg-white hover:bg-blue-100 text-gray-800"
       }`}
     >
@@ -19,7 +19,7 @@ const { active } = Astro.props;
       href="/ritual"
       class={`px-4 py-2 border rounded transition uppercase ${
         active === "ritual"
-          ? "bg-indigo-600 text-white"
+          ? "contact-cta"
           : "bg-white hover:bg-blue-100 text-gray-800"
       }`}
     >
@@ -30,7 +30,7 @@ const { active } = Astro.props;
       href="/brows"
       class={`px-4 py-2 border rounded transition uppercase ${
         active === "brows"
-          ? "bg-indigo-600 text-white"
+          ? "contact-cta"
           : "bg-white hover:bg-blue-100 text-gray-800"
       }`}
     >
@@ -41,7 +41,7 @@ const { active } = Astro.props;
       href="/manicure"
       class={`px-4 py-2 border rounded transition uppercase ${
         active === "manicure"
-          ? "bg-indigo-600 text-white"
+          ? "contact-cta "
           : "bg-white hover:bg-blue-100 text-gray-800"
       }`}
     >
@@ -52,11 +52,29 @@ const { active } = Astro.props;
       href="/waxing"
       class={`px-4 py-2 border rounded transition uppercase ${
         active === "waxing"
-          ? "bg-indigo-600 text-white"
+          ? "contact-cta "
           : "bg-white hover:bg-blue-100 text-gray-800"
       }`}
     >
       Waxing
     </a>
+
+    <a
+      href="/permanantmakeup"
+      class={`px-4 py-2 border rounded transition uppercase ${
+        active === "permanantmakeup"
+          ? "contact-cta "
+          : "bg-white hover:bg-blue-100 text-gray-800"
+      }`}
+    >
+      Permanant Makup
+    </a>
   </div>
 </div>
+
+<style>
+  a {
+    font-family: "Tenor Sans", "Tenor Sans Placeholder", sans-serif;
+    letter-spacing: 0.2rem;
+  }
+</style>

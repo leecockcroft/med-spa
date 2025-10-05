@@ -1,0 +1,96 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Hero from "../components/Hero.astro";
+import Services from "../components/Services.astro";
+import ContactForm from "../components/ContactForm.astro";
+import Footer from "../components/Footer.astro";
+import json from "../components/services.json";
+import Filter from "../components/Filter.astro";
+import "../styles/global.css";
+
+let activeFilter = "all";
+---
+
+<Layout>
+  <Navbar />
+
+  <!-- Contact Section -->
+  <section
+    id="contact"
+    class="pt-24 px-4 bg-gray-100"
+    style="background-color: rgb(246, 245, 241);"
+  >
+    <h2 class="text-3xl font-semibold mb-6">Contact Us</h2>
+    <div
+      class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-5 gap-8 items-center"
+    >
+      <!-- Left Column: Image -->
+      <div class="lg:col-span-2 text-center">
+        <img
+          src="../images/IMG_4773.webp"
+          alt="Contact"
+          class="mx-auto rounded-lg shadow-md max-w-xs"
+        />
+      </div>
+
+      <!-- Right Column: Form -->
+      <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        class="lg:col-span-3 bg-white p-6 rounded-lg shadow-md"
+      >
+        <input type="hidden" name="form-name" value="contact" />
+
+        <div class="mb-4">
+          <label for="name" class="block text-gray-700 font-medium mb-2">
+            Your Name
+          </label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700 font-medium mb-2">
+            Your Email
+          </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+
+        <div class="mb-4">
+          <label for="message" class="block text-gray-700 font-medium mb-2">
+            Message
+          </label>
+          <textarea
+            name="message"
+            id="message"
+            rows="5"
+            required
+            class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition"
+        >
+          Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+</Layout>
+
+<Footer />

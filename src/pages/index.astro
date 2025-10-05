@@ -12,9 +12,9 @@ import Aboutme from "../components/Aboutme.astro";
 <Layout style="background-color: rgb(246, 245, 241);">
   <Navbar style="background-color: rgb(246, 245, 241);" />
   <Hero style="background-color: rgb(246, 245, 241);" />
-
+  <h2 class="text-3xl font-semibold mb-6">Services</h2>
   <div
-    class="mb-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14 justify-items-center"
+    class="mb-32 gap-y-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-items-center"
     style="background-color: rgb(246, 245, 241);"
   >
     <ServiceItems
@@ -32,11 +32,26 @@ import Aboutme from "../components/Aboutme.astro";
       title="Manicure and Pedicure"
       url="/manicure"
     />
-  </div>
 
-  <div class="pt-5">
-    <Aboutme />
+    <ServiceItems
+      image="../images/a2560888-de37-4bd4-9acc-3b6a41843fc7.webp"
+      title="Brows and Lashes"
+      url="/brows"
+    />
+
+    <ServiceItems
+      image="../images/b8e994d8-cea3-453b-9205-5036224d0b82.jpeg"
+      title="Waxing"
+      url="/waxing"
+    />
+    <ServiceItems
+      image="../images/eb9b1c4d-f003-46e8-a3c5-60b2c951dce2.webp"
+      title="permanant Makeup"
+      url="/permanantmakeup"
+    />
   </div>
-  <ContactForm />
-  <Footer />
+  <h2 class="text-3xl font-semibold mb-6">About Me</h2>
+  <Aboutme style="background-color: rgb(246, 245, 241);" />
 </Layout>
+<ContactForm />
+<Footer />

@@ -1,0 +1,75 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Hero from "../components/Hero.astro";
+import Services from "../components/Services.astro";
+import ContactForm from "../components/ContactForm.astro";
+import Footer from "../components/Footer.astro";
+import json from "../components/services.json";
+import Filter from "../components/Filter.astro";
+import "../styles/global.css";
+
+let activeFilter = "all";
+---
+
+<Layout>
+  <Navbar />
+
+  <section class="bg-[#f6f5f1] py-16 px-6 text-center">
+    <h2
+      class="mt-10 text-3xl font-semibold tracking-wide text-gray-800 uppercase font-tenor"
+    >
+      OUR SERVICES
+    </h2>
+    <p class="mt-4 text-lg text-gray-600 italic">
+      A renewing experience awaits you.
+    </p>
+  </section>
+  <Filter active="permanantmakeup" />
+  <div class="flex flex-wrap justify-start gap-6 px-4">
+    <Services
+      title="Brow Designer"
+      image="../images/b6ba2207-d7e8-4906-a4e3-8cc570a45ed6.webp"
+      description={`<p>I’m Jenny Benasolo, a dedicated brow artist passionate about creating timeless, natural beauty.<p>
+</br/><p>Since my first training in Paris in 2016, I’ve earned over seven international certifications — including with the prestigious PhiBrows Academy — continually refining my craft in Microblading, PowderBrows, and Lip Blushing.</p>
+
+</br/><p>I believe a perfectly designed brow can do more than frame the face — it can illuminate the eyes, restore confidence, and reveal your natural elegance. Each brow I create is fully tailored to your unique features, avoiding fleeting trends to achieve balance and harmony.</p>
+
+</br/><p>For me, brow artistry is more than technique — it’s about intention, precision, and bespoke care, enhancing beauty in a way that feels authentic and empowering..`}
+      pricehome="Home: 45 min – 100€"
+      pricesalon="Salon: 45 min – 65€"
+      hideFirstItem="hidden"
+      hideSecondItem="hidden"
+      filter="permanantmakeup"
+    />
+
+    <Services
+      title="Micoblading"
+      image="../images/7d223379-3436-4675-ab9e-5b9bdb3ffc54.webp"
+      description={`<p>Microblading is a manual technique applied to the eyebrow area using the hair technique. This means that individual hairs are drawn manually to create a very realistic and natural result.</p></br/><p>At The Perma, the perfect shape for the eyebrows is calculated based on the golden ratio and facial morphology. With the help of the Golden Ratio Divider, the symmetry as well as the suitable shape of the eyebrows is determined. We offer various techniques to correct imperfections, but also to accentuate contours.</p>`}
+      hideFirstItem="hidden"
+      hideSecondItem="hidden"
+      filter="permanant-makup"
+    />
+
+    <Services
+      title="Powder Brows"
+      image="../images/35294f02-c94b-4856-8604-3cce274b4d68.webp"
+      description={`<p>Powder Brows, also known as Ombre Brows, is a semi-permanent makeup treatment designed to give your eyebrows a softly shaded, pixel-perfect finish—similar to the look of well-blended brow powder or pencil.</p><br/><p> Unlike microblading, which mimics individual hairs, Powder Brows uses a machine technique that layers pigment in a gradient style for beautifully filled, natural-looking brows.</p>`}
+      hideFirstItem="hidden"
+      hideSecondItem="hidden"
+      filter="permanant-makup"
+    />
+
+    <Services
+      title="LIP BLUSH"
+      image="../images/7fcfb63b-370d-4e0f-adb9-a741c9738063.webp"
+      description={`<p>Powder Brows, also known as Ombre Brows, is a semi-permanent makeup treatment designed to give your eyebrows a softly shaded, pixel-perfect finish—similar to the look of well-blended brow powder or pencil. Unlike microblading, which mimics individual hairs, Powder Brows uses a machine technique that layers pigment in a gradient style for beautifully filled, natural-looking brows.</p>`}
+      hideFirstItem="hidden"
+      hideSecondItem="hidden"
+      filter="permanant-makup"
+    />
+  </div>
+</Layout>
+
+<Footer />

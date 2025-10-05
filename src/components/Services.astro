@@ -15,7 +15,7 @@ const {
 <section
   data-aos="zoom-in"
   style="background-color: rgb(246, 245, 241);"
-  class={`w-full max-w-[300px] flex-shrink-0 py-6 ${filter} panel`}
+  class={`w-full max-w-[300px] flex-shrink-0 py-6 ${filter} panel flex flex-col h-[600px]`}
 >
   <img
     class={`image-service-class ${hidden ? "hidden" : ""}`}
@@ -29,8 +29,18 @@ const {
     <p set:html={description}>{description}</p>
     <h3 class="text-lg font-bold mt-4 mb-2">Prices</h3>
     <ul class="list-disc list-inside">
-      <li class={hideFirstItem}><strong>{pricehome}</strong></li>
-      <li class={hideSecondItem}><strong>{pricesalon}</strong></li>
+      <li class={`${hideFirstItem} li-line-height`}>
+        <strong>{pricehome}</strong>
+      </li>
+      <li class={`${hideSecondItem} li-line-height`}>
+        <strong>{pricesalon}</strong>
+      </li>
     </ul>
   </div>
 </section>
+
+<style>
+  .li-line-height {
+    line-height: 2.5rem;
+  }
+</style>

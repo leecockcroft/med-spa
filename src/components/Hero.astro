@@ -1,3 +1,7 @@
+---
+import "../styles/global.css";
+---
+
 <section
   style="background-color: rgb(246, 245, 241);"
   class="lg:mb-20 lg:flex lg:justify-around lg:max-w-[1000px] lg:mx-auto bg-blue-50 text-center hero-section flex-col md:flex md:flex-row items-center"
@@ -10,49 +14,40 @@
     />
   </div>
   <div
-    class="pt-20 pb-10 hero-section-right"
+    class="lg:pt-20 pb-10 mb-10 mt-5 hero-section-right text-center lg:max-w-md lg:mx-auto"
     data-aos="fade-right"
     data-aos-delay="100"
   >
     <p
-      class="text-lg mb-6 typing-text"
-      Massage
-      &
-      Spa
-      at
-      Your
-      Doorstep,
-      that's
-      how
-      Luxary
-      supposed
-      To
-      Be<
-      p
+      class="m-auto text-sm text-center mb-6 typing-text lg:max-w-sm lg:mx-auto max-w-xs"
     >
-      <h1 class="header-title text-4xl mb-4 block">
-        Wellness at your pace in your spare.
-      </h1>
-
-      <a href="#contact" class="bg-blue-600 text-white px-6 py-2 rounded"
-        >Book Now</a
-      >
+      Massage & Spa at Your Doorstep, that's how Luxary supposed To Be
     </p>
+    <h1 class="header-title text-5xl mb-8 block max-w-xs mx-auto">
+      Wellness at your pace in your spare.
+    </h1>
+
+    <a href="#contact" class="contact-cta text-white px-6 py-2 rounded">
+      Book Now
+    </a>
   </div>
-
-  <style>
-    .header-title {
-      letter-spacing: 0.5rem;
-      line-height: 3.5rem;
-    }
-    section {
-      font-family: "Tenor Sans", "Tenor Sans Placeholder", sans-serif;
-    }
-
-    .hero-image {
-      height: 500px;
-      width: 600px;
-      object-fit: cover;
-    }
-  </style>
 </section>
+
+<style>
+  .header-title {
+  }
+
+  h1 {
+    font-family: "Sora", "Sora Placeholder", sans-serif;
+  }
+
+  section p {
+    font-family: "Tenor Sans", "Tenor Sans Placeholder", sans-serif;
+  }
+
+  .hero-image {
+    height: 500px;
+    width: 600px;
+    object-fit: cover;
+  }
+</style>
