@@ -1,36 +1,62 @@
-<!-- CSS for toggling panels -->
+---
+const { active } = Astro.props;
+---
+
 <div class="bg-blue-50 py-10 sm:py-16 md:py-20 text-center">
-  <!-- Labels -->
-  <div class="flex flex-wrap justify-center gap-4 my-6 sm:my-8">
+  <div class="flex flex-wrap justify-center gap-4 my-6 sm:my-8 massage-filter">
     <a
       href="/massage"
-      id="massage"
-      class="px-4 py-2 bg-white border rounded hover:bg-blue-100 transition"
-      >Massage</a
+      class={`px-4 py-2 border rounded transition uppercase ${
+        active === "massage"
+          ? "bg-indigo-600 text-white"
+          : "bg-white hover:bg-blue-100 text-gray-800"
+      }`}
     >
+      Massage
+    </a>
+
     <a
       href="/ritual"
-      id="ritual"
-      class="px-4 py-2 bg-white border rounded hover:bg-blue-100 transition"
-      >Ritual</a
+      class={`px-4 py-2 border rounded transition uppercase ${
+        active === "ritual"
+          ? "bg-indigo-600 text-white"
+          : "bg-white hover:bg-blue-100 text-gray-800"
+      }`}
     >
+      Ritual Spa
+    </a>
+
     <a
       href="/brows"
-      id="brows"
-      class="px-4 py-2 bg-white border rounded hover:bg-blue-100 transition"
-      >Brows</a
+      class={`px-4 py-2 border rounded transition uppercase ${
+        active === "brows"
+          ? "bg-indigo-600 text-white"
+          : "bg-white hover:bg-blue-100 text-gray-800"
+      }`}
     >
+      Brows and Lashes
+    </a>
+
     <a
       href="/manicure"
-      id="manicure"
-      class="px-4 py-2 bg-white border rounded hover:bg-blue-100 transition"
-      >Manicure & Pedicure</a
+      class={`px-4 py-2 border rounded transition uppercase ${
+        active === "manicure"
+          ? "bg-indigo-600 text-white"
+          : "bg-white hover:bg-blue-100 text-gray-800"
+      }`}
     >
+      Manicure & Pedicure
+    </a>
+
     <a
       href="/waxing"
-      id="waxing"
-      class="px-4 py-2 bg-white border rounded hover:bg-blue-100 transition"
-      >waxing</a
+      class={`px-4 py-2 border rounded transition uppercase ${
+        active === "waxing"
+          ? "bg-indigo-600 text-white"
+          : "bg-white hover:bg-blue-100 text-gray-800"
+      }`}
     >
+      Waxing
+    </a>
   </div>
 </div>

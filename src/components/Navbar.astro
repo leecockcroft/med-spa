@@ -87,36 +87,45 @@ import ServiceItems from "../components/ServiceItems.astro";
 
   <!-- Mobile Menu -->
   <div id="mobile-menu" class="md:hidden hidden px-4 pt-2 pb-4 space-y-2">
-    <a
-      href="/services?filter=massage"
-      class="block text-gray-700 hover:text-blue-600"
-    >
-      <ServiceItems
+    <a href="/massage" class="block text-gray-700 hover:text-blue-600"
+      >Massage
+      <!-- <ServiceItems
         image="../images/7ff5db47-0fd9-4c8c-8c93-b4640ab5ce8b.webp"
         title="Massage"
-      /></a
-    >
-    <a href="/services" class="block text-gray-700 hover:text-blue-600">
-      <ServiceItems image="../images/IMG_4794.webp" title="Ritual Spa" />
+      /> -->
     </a>
-    <a
-      href="/services?filter=pendicure"
-      class="block text-gray-700 hover:text-blue-600"
-    >
-      <ServiceItems
+
+    <a href="/ritual-spa" class="block text-gray-700 hover:text-blue-600">
+      <!-- <ServiceItems image="../images/IMG_4794.webp" title="Ritual Spa" /> -->
+      Ritual Spa
+    </a>
+    <a href="/manicure-pedicure" class="block text-gray-700 hover:text-blue-600"
+      >Manicure and Pedicure
+      <!-- <ServiceItems
         image="../images/IMG_4786.webp"
         title="Manicure and Pedicure"
-      /></a
-    >
+      /> -->
+    </a>
+
+    <a href="/waxing" class="block text-gray-700 hover:text-blue-600"
+      >Waxing
+    </a>
+
+    <a href="/brows" class="block text-gray-700 hover:text-blue-600"
+      >Brows and Lashes
+    </a>
+
     <a href="/about" class="block text-gray-700 hover:text-blue-600">About</a>
-    <a href="/contact" class="block text-gray-700 hover:text-blue-600"
+    <a
+      href="/contact"
+      class="block bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700"
       >Contact</a
     >
-    <a
+    <!-- <a
       href="/book"
       class="block bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700"
       >Book Now</a
-    >
+    > -->
   </div>
 
   <script>
