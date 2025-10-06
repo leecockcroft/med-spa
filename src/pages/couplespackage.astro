@@ -1,0 +1,66 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Hero from "../components/Hero.astro";
+import Services from "../components/Services.astro";
+import ContactForm from "../components/ContactForm.astro";
+import Services from "../components/Services.astro";
+import Footer from "../components/Footer.astro";
+import json from "../components/services.json";
+import Filter from "../components/Filter.astro";
+import "../styles/global.css";
+
+let activeFilter = "all";
+---
+
+<Layout>
+  <Navbar />
+
+  <section class="bg-[#f6f5f1] py-16 px-6 text-center">
+    <h2
+      class="mt-10text-3xl font-semibold tracking-wide text-gray-800 uppercase font-tenor"
+    >
+      OUR SERVICES
+    </h2>
+    <p class="mt-4 text-lg text-gray-600 italic">
+      A renewing experience awaits you.
+    </p>
+  </section>
+  <Filter active="couplespackage" />
+  <div class="flex flex-wrap justify-center gap-6 px-4">
+    <Services
+      title={`✨COUPLE MOBILE MASSAGE & SPA✨`}
+      }
+      image="../images/b2517bdc-381d-452f-8c32-e75074244e45.webp"
+      description={`
+      <p>We all know how easily routine can take over in a relationship. Once it settles in, it’s not always easy to reconnect or step out of the everyday spiral.</p>
+
+<p>That’s why we’ve created something special – an experience designed to surprise you and bring you closer.</p>`}
+      hideFirstItem="hidden"
+      pricesalon=""
+      filter="couplespackage"
+      active="couplespackage"
+      hideSecondItem="hidden"
+    />
+
+    <Services
+      title={`PACK 1`}
+      }
+      image="../images/9224ba73-4175-4206-9953-c7ab285d6ab2.webp"
+      description={`
+     
+     
+      <ul>
+ <li>Goddess Bath</li>
+<li>⁠Body exfoliation + Scented Balm</li>
+<li>⁠Luxury Manicure & Pedicure</li> </ul>`}
+      hideFirstItem="hidden"
+      pricesalon=""
+      filter="couplespackage"
+      active="couplespackage"
+      hideSecondItem="hidden"
+    />
+  </div>
+
+  <Footer />
+</Layout>
