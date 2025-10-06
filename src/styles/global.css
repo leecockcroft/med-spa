@@ -27,6 +27,9 @@ img{
     color: rgb(71, 66, 64);
     border-radius: 5em;
   }
+  a{
+    font-family: 'Tenor Sans', 'Tenor Sans Placeholder', sans-serif;
+  }
 /* #daddd7;
     --token-99429804-98c0-4655-9081-c13b741ef6ff: #f6f5f1;
     --token-3aacd9fc-9d17-4f1b-a370-e01b5a3a29ad: #474240;
