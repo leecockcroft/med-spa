@@ -60,6 +60,11 @@ import Aboutme from "../components/Aboutme.astro";
   <Aboutme style="background-color: rgb(246, 245, 241);" />
 </Layout>
 <ContactForm />
+<form name="test-form" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="test-form" />
+  <input type="text" name="name" />
+  <button type="submit">Submit</button>
+</form>
 <Footer />
 <script type="module">
   import Swiper from "swiper";
