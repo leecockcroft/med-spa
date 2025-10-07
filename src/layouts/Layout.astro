@@ -1,6 +1,7 @@
 ---
 const { children } = Astro.props;
 import "aos/dist/aos.css";
+import SplideInit from "../scripts/splide-init.js";
 ---
 
 <!doctype html>
@@ -9,38 +10,44 @@ import "aos/dist/aos.css";
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>MedSpa</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-      integrity="sha512-...your-integrity-key..."
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <script type="module" src="/src/scripts/splide-init.js" client:load
+    ></script>
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-...your-integrity-key..."
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap"
-      rel="stylesheet"
-    />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap"
+    rel="stylesheet"
+  />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <script type="module" src="/src/scripts/showPanel.js"></script><script
-      src="https://unpkg.com/taos@latest/dist/taos.js"></script></head
-  >
-
-  <body
-    class="bg-white text-gray-800 scroll-pt-[80px] max-w-screen-lg mx-auto"
-    style="background-color: rgb(246, 245, 241);"
-  >
-    <slot />
-
-    <script>
-      import AOS from "aos";
-      AOS.init();
-    </script>
-
-    <style></style>
-  </body>
+  <link
+    href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    rel="stylesheet"
+  />
+  <script type="module" src="/src/scripts/showPanel.js"></script><script
+    src="https://unpkg.com/taos@latest/dist/taos.js"></script>
 </html>
+
+<body
+  class="bg-white text-gray-800 scroll-pt-[80px] max-w-screen-lg mx-auto"
+  style="background-color: rgb(246, 245, 241);"
+>
+  <slot />
+
+  <div client:load>
+    <!-- Your slider HTML goes here -->
+  </div>
+
+  <script>
+    import AOS from "aos";
+    AOS.init();
+  </script>
+
+  <style></style>
+</body>

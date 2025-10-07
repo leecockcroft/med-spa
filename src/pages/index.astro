@@ -61,3 +61,15 @@ import Aboutme from "../components/Aboutme.astro";
 </Layout>
 <ContactForm />
 <Footer />
+<script type="module">
+  import Swiper from "swiper";
+
+  const swiper = new Swiper(".mySwiper", {
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    effect: "fade",
+  });
+</script>

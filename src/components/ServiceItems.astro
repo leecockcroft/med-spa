@@ -13,7 +13,7 @@ const { image, title, url } = Astro.props;
       <h2
         data-aos="fade-up"
         data-aos-delay="10"
-        class="text-2xl md:text-3xl lg:text-xl font-semibold text-black"
+        class="text-2xl md:text-3xl lg:text-xl font-semibold text-black font-class"
       >
         {title}
         <h2></h2>
@@ -21,3 +21,10 @@ const { image, title, url } = Astro.props;
     </a>
   </div>
 </div>
+<style>
+  .font-class {
+    font-family: "Tenor Sans", "Tenor Sans Placeholder", sans-serif;
+    letter-spacing: 0.2rem;
+    font-size: 1rem;
+  }
+</style>

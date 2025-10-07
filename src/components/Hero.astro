@@ -1,103 +1,128 @@
-<!-- ---
-import "../styles/global.css";
+---
+import "@splidejs/splide/css";
+import { Splide, SplideSlide } from "astro-splide";
 ---
 
-<section
-  style="background-color: rgb(246, 245, 241);"
-  class="lg:mb-20 lg:flex lg:justify-around lg:max-w-[1000px] lg:mx-auto bg-blue-50 text-center hero-section flex-col md:flex md:flex-row items-center"
+<Splide
+  class="not-content"
+  options={{
+    type: "loop",
+    autoplay: true,
+    interval: 5000,
+    pauseOnHover: false,
+  }}
 >
-  <div class="hero-section-left">
-    <img
-      src="../images/IMG_4778.webp"
-      alt="MedSpa Logo"
-      class="w-full h-auto mb-4 hero-image"
-    />
-  </div>
-  <div
-    class="lg:pt-20 pb-10 mb-10 mt-5 hero-section-right text-center lg:max-w-md lg:mx-auto"
-    data-aos="fade-right"
-    data-aos-delay="100"
-  >
-    <p
-      class="m-auto text-sm text-center mb-6 typing-text lg:max-w-sm lg:mx-auto max-w-xs"
+  <SplideSlide>
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      class="absolute inset-0 w-full h-full object-cover z-0"
     >
-      Massage & Spa at Your Doorstep, that's how Luxary supposed To Be
-    </p>
-    <h1 class="header-title text-5xl mb-8 block max-w-xs mx-auto">
-      Wellness at your pace in your spare.
-    </h1>
+      <source src="/videos/IMG_0871-compressed.mp4" type="video/mp4" />
+    </video>
+    <div class="overlay absolute inset-0 z-10"></div>
 
-    <a href="#contact" class="contact-cta text-white px-6 py-2 rounded">
-      Book Now
-    </a>
-  </div>
-</section>
-
-<style>
-  .header-title {
-  }
-
-  h1 {
-    font-family: "Sora", "Sora Placeholder", sans-serif;
-  }
-
-  section p {
-    font-family: "Tenor Sans", "Tenor Sans Placeholder", sans-serif;
-  }
-
-  .hero-image {
-    height: 500px;
-    width: 600px;
-    object-fit: cover;
-  }
-</style> -->
-<section class="relative w-full h-screen overflow-hidden">
-  <!-- Video Background -->
-  <video
-    autoplay
-    muted
-    loop
-    playsinline
-    class="absolute inset-0 w-full h-full object-cover z-0"
-  >
-    <source src="/videos/IMG_0871-compressed.mp4" type="video/mp4" />
-  </video>
-
-  <!-- Overlay -->
-  <div class="absolute inset-0 z-10"></div>
-
-  <!-- Text Content -->
-  <div
-    class="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-6"
-  >
-    <h1
-      class="text-white text-4xl md:text-6xl font-serif mb-4"
-      data-aos="zoom-out-right"
-      data-aos-duration="10000"
+    <!-- Text Content -->
+    <div
+      class="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-6"
     >
-      <!-- Restore Your Body. Reconnect With Your Soul. --> Wellness at your pace
-      in your spare.
-    </h1>
-    <p
-      class="text-white text-lg md:text-xl mb-6 max-w-2xl"
-      data-aos="zoom-out-left"
-      data-aos-duration="10000"
+      <h1
+        class="text-white text-4xl md:text-6xl font-serif mb-4"
+        data-aos="zoom-out-right"
+        data-aos-duration="10000"
+      >
+        <!-- Restore Your Body. Reconnect With Your Soul. --> Wellness at your pace
+        in your spare.
+      </h1>
+      <p
+        class="text-white text-lg md:text-xl mb-6 max-w-2xl"
+        data-aos="zoom-out-left"
+        data-aos-duration="10000"
+      >
+        <!-- Luxury wellness retreats, personal training, and holistic beauty care in a
+        serene coastal setting. -->
+        Massage & Spa at Your Doorstep, that's how Luxary supposed To Be
+      </p>
+      <a
+        href="/massaage"
+        class="bg-white text-gray-800 px-6 py-3 rounded hover:bg-gray-200 transition"
+      >
+        Explore Services
+      </a>
+    </div>
+  </SplideSlide>
+  <SplideSlide>
+    <img src="/images/25174382-766d-43d4-8833-2a3ef978ba91.jpeg" alt="" />
+    <div class="overlay absolute inset-0 z-10"></div>
+
+    <!-- Text Content -->
+    <div
+      class="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-6"
     >
-      <!-- Luxury wellness retreats, personal training, and holistic beauty care in a
-      serene coastal setting. -->
-      Massage & Spa at Your Doorstep, that's how Luxary supposed To Be
-    </p>
-    <a
-      href="#services"
-      class="bg-white text-gray-800 px-6 py-3 rounded hover:bg-gray-200 transition"
+      <h1
+        class="text-white text-4xl md:text-6xl font-serif mb-4"
+        data-aos="zoom-out-right"
+        data-aos-duration="10000"
+      >
+        <!-- Restore Your Body. Reconnect With Your Soul. --> Wellness at your pace
+        in your spare.
+      </h1>
+      <p
+        class="text-white text-lg md:text-xl mb-6 max-w-2xl"
+        data-aos="zoom-out-left"
+        data-aos-duration="10000"
+      >
+        <!-- Luxury wellness retreats, personal training, and holistic beauty care in a
+        serene coastal setting. -->
+        Massage & Spa at Your Doorstep, that's how Luxary supposed To Be
+      </p>
+      <a
+        href="/massage"
+        class="bg-white text-gray-800 px-6 py-3 rounded hover:bg-gray-200 transition"
+      >
+        Explore Services
+      </a>
+    </div>
+  </SplideSlide>
+  <SplideSlide>
+    <img src="/images/IMG_4794.webp" alt="" />
+    <div class="overlay absolute inset-0 z-10"></div>
+
+    <!-- Text Content -->
+    <div
+      class="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-6"
     >
-      Explore Services
-    </a>
-  </div>
-</section>
+      <h1
+        class="text-white text-4xl md:text-6xl font-serif mb-4"
+        data-aos="zoom-out-right"
+        data-aos-duration="10000"
+      >
+        <!-- Restore Your Body. Reconnect With Your Soul. --> Wellness at your pace
+        in your spare.
+      </h1>
+      <p
+        class="text-white text-lg md:text-xl mb-6 max-w-2xl"
+        data-aos="zoom-out-left"
+        data-aos-duration="10000"
+      >
+        <!-- Luxury wellness retreats, personal training, and holistic beauty care in a
+        serene coastal setting. -->
+        Massage & Spa at Your Doorstep, that's how Luxary supposed To Be
+      </p>
+      <a
+        href="/massage"
+        class="bg-white text-gray-800 px-6 py-3 rounded hover:bg-gray-200 transition"
+      >
+        Explore Services
+      </a>
+    </div>
+  </SplideSlide>
+</Splide>
 
 <style>
   .overlay {
-    background: rgb(34 29 29 / 40%);
+    background: rgba(0, 0, 0, 0.4);
   }
 </style>
