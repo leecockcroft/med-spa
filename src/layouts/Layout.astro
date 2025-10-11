@@ -1,7 +1,7 @@
 ---
 const { children } = Astro.props;
 import "aos/dist/aos.css";
-import SplideInit from "../scripts/splide-init.js";
+import SplideInit from "../scripts/aos-init.js";
 ---
 
 <!doctype html>
@@ -11,8 +11,7 @@ import SplideInit from "../scripts/splide-init.js";
     <meta title="Massage Art Estepona" />
     <meta name="viewport" content="width=device-width" />
     <title>Massage Art Estepona</title>
-    <script type="module" src="/src/scripts/splide-init.js" client:load
-    ></script>
+    <script type="module" src="/src/scripts/aos-init.js"></script>
   </head>
   <link
     rel="stylesheet"
@@ -41,14 +40,46 @@ import SplideInit from "../scripts/splide-init.js";
 >
   <slot />
 
-  <div client:load>
-    <!-- Your slider HTML goes here -->
+  <div
+    id="cookie-banner"
+    class="fixed bottom-0 left-0 right-0 bg-gray-800 text-white p-4 text-center z-50"
+  >
+    We use cookies to improve your experience. By using our site, you agree to
+    our cookie policy.
+    <button
+      onclick="acceptCookies()"
+      class="ml-4 bg-green-500 px-3 py-1 rounded">Accept</button
+    >
+  </div>
+
+  <div
+    id="cookie-banner"
+    style="position: fixed; bottom: 20px; left: 20px; background: #fff; border: 1px solid #ccc; padding: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.2); z-index: 9999;"
+  >
+    <p>
+      We use cookies to improve your experience and analyse website traffic. Do
+      you accept?
+    </p>
+    <button id="accept-cookies" style="margin-right: 10px;">Accept</button>
   </div>
 
   <script>
-    import AOS from "aos";
-    AOS.init();
-  </script>
+    window.dataLayer = window.dataLayer || [];
 
-  <style></style>
+    // Check if already accepted
+    if (localStorage.getItem("cookiesAccepted") === "true") {
+      dataLayer.push({ event: "consent_accepted" });
+      const banner = document.getElementById("cookie-banner");
+      if (banner) banner.style.display = "none";
+    }
+
+    // Handle accept click
+    document
+      .getElementById("accept-cookies")
+      .addEventListener("click", function () {
+        localStorage.setItem("cookiesAccepted", "true");
+        document.getElementById("cookie-banner").style.display = "none";
+        dataLayer.push({ event: "consent_accepted" });
+      });
+  </script>
 </body>
