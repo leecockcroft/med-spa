@@ -12,7 +12,7 @@ import Aboutme from "../components/Aboutme.astro";
 <Layout style="background-color: rgb(246, 245, 241);">
   <Navbar style="background-color: rgb(246, 245, 241);" />
   <Hero style="background-color: rgb(246, 245, 241);" />
-  <h2 class="text-3xl font-semibold mb-6">Services</h2>
+  <h2 class="text-3xl font-semibold mb-6 service-title">Services</h2>
   <div
     class="mb-32 gap-y-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-items-center"
     style="background-color: rgb(246, 245, 241);"
@@ -82,6 +82,15 @@ import Aboutme from "../components/Aboutme.astro";
   </svg>
 </a>
 <Footer />
+
+<style>
+  .service-title {
+    font-family: "Tenor Sans", "Tenor Sans Placeholder", sans-serif;
+
+    letter-spacing: 0.5rem;
+    font-weight: 200;
+  }
+</style>
 <script type="module">
   import Swiper from "swiper";
 
