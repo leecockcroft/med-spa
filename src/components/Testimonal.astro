@@ -1,65 +1,88 @@
-<section class="bg-gray-50 py-12">
-  <div class="max-w-screen-lg mx-auto px-4">
-    <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">
-      What Our Clients Say
-    </h2>
+---
+import "@splidejs/splide/css";
+import { Splide, SplideSlide } from "astro-splide";
+import type { Splide as SplideInterface } from "@splidejs/splide";
+---
 
-    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-      <!-- Testimonial Card -->
-      <div class="bg-white p-6 rounded-lg shadow-md">
-        <p class="text-gray-700 italic">
-          “Absolutely the best massage I’ve ever had. The ambiance was perfect
-          and I left feeling renewed.”
-        </p>
-        <div class="mt-4 flex items-center">
-          <img
-            src="https://i.pravatar.cc/50?img=1"
-            alt="Client photo"
-            class="w-10 h-10 rounded-full mr-3"
-          />
-          <div>
-            <p class="text-sm font-semibold text-gray-900">Sophie R.</p>
-            <p class="text-xs text-gray-500">Estepona, Spain</p>
-          </div>
-        </div>
-      </div>
+<Splide
+  options={{
+    perPage: 2,
+    breakpoints: {
+      640: {
+        perPage: 1,
+      },
+    },
+    rewind: true,
+    gap: "1rem",
+    autoplay: true, // ✅ Enables auto sliding
+    interval: 2000, // ✅ Time between slides (in ms)
+    pauseOnHover: true, // ✅ Optional: pause when hovered
+    type: "loop", // ✅ Optional: loop continuously
+    rewind: true,
+    gap: "1rem",
+  }}
+  aria-labelledby="basic-example-heading"
+  onMoved={(
+    splide: SplideInterface,
+    index: number,
+    prev: number,
+    dest: number
+  ) => {
+    console.log("splide:", splide);
+  }}
+>
+  <SplideSlide>
+    <figure class="bg-gray-100 p-6 rounded-lg shadow-md max-w-xl mx-auto">
+      <blockquote class="text-lg italic text-gray-800">
+        “Jenny is truly exceptional. Not only was the massage itself absolutely
+        fantastic, but she also took the time to explain so much about facial
+        massage and its benefits. Her knowledge is remarkable, yet what touched
+        me the most is her warm personality and wisdom. The psychological lesson
+        she gave me after our session is something I will never forget. I feel
+        very grateful for the experience and I look forward to seeing her again
+        very soon.”
+      </blockquote>
+    </figure>
+  </SplideSlide>
 
-      <!-- Repeat for more testimonials -->
-      <div class="bg-white p-6 rounded-lg shadow-md">
-        <p class="text-gray-700 italic">
-          “Professional, relaxing, and deeply healing. Highly recommend the
-          Ritual Spa treatment!”
-        </p>
-        <div class="mt-4 flex items-center">
-          <img
-            src="https://i.pravatar.cc/50?img=2"
-            alt="Client photo"
-            class="w-10 h-10 rounded-full mr-3"
-          />
-          <div>
-            <p class="text-sm font-semibold text-gray-900">Carlos M.</p>
-            <p class="text-xs text-gray-500">Marbella, Spain</p>
-          </div>
-        </div>
-      </div>
+  <SplideSlide>
+    <figure class="bg-gray-100 p-6 rounded-lg shadow-md max-w-xl mx-auto">
+      <blockquote class="text-lg italic text-gray-800">
+        “I feel so lucky to have found Jenny! Originally I was only searching
+        for a professional well trained mobile masseuse... then only to discover
+        Jenny can also provide a full beauty service! Jenny was so easy to
+        communicate and organise our home appointment with. I ended up adding an
+        eyebrow shape, lash tint and lift... it's been along long time since I
+        have been so happy with a result! Jenny will be my first call after
+        booking flights. Her massage style is very unique... for me the perfect
+        balance of tension release and relaxation... exactly what I asked for!
+        Selfishly I am dreading others discovering her as she will be in high
+        demand... but her approach, skills and expertise are too good not to
+        share with others to experience. Jenny thank you and I'll be seeing you
+        again soon!.”
+      </blockquote>
+    </figure>
+  </SplideSlide>
 
-      <div class="bg-white p-6 rounded-lg shadow-md">
-        <p class="text-gray-700 italic">
-          “A hidden gem in Estepona. The staff are lovely and the treatments are
-          divine.”
-        </p>
-        <div class="mt-4 flex items-center">
-          <img
-            src="https://i.pravatar.cc/50?img=3"
-            alt="Client photo"
-            class="w-10 h-10 rounded-full mr-3"
-          />
-          <div>
-            <p class="text-sm font-semibold text-gray-900">Elena G.</p>
-            <p class="text-xs text-gray-500">Benahavís, Spain</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  <SplideSlide>
+    <figure class="bg-gray-100 p-6 rounded-lg shadow-md max-w-xl mx-auto">
+      <blockquote class="text-lg italic text-gray-800">
+        “I've had the pleasure of receiving various home treatments from Jenny
+        including masssge, facials, waxing and eyelashes. As well as being a
+        beautiful soul and a joy to deal with, Jenny is very, very good at her
+        craft... experienced and very professional. I have had many massages and
+        beauty treatments throughout the years and can honestly say Jenny is up
+        there as one of the best.”
+      </blockquote>
+    </figure>
+  </SplideSlide>
+
+  <SplideSlide>
+    <figure class="bg-gray-100 p-6 rounded-lg shadow-md max-w-xl mx-auto">
+      <blockquote class="text-lg italic text-gray-800">
+        “This spa experience was absolutely transformative. I’ve never felt so
+        relaxed and rejuvenated.”
+      </blockquote>
+    </figure>
+  </SplideSlide>
+</Splide>
