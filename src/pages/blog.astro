@@ -8,11 +8,19 @@ import Services from "../components/Services.astro";
 import Footer from "../components/Footer.astro";
 import json from "../components/services.json";
 import Filter from "../components/Filter.astro";
+import Blog from "../components/Blog.astro";
 import "../styles/global.css";
 
 let activeFilter = "all";
+import Seo from "../components/Seo.astro";
+const title = "Luxury Massage & Beauty in Estepona";
+const description =
+  "Tailored treatments for men and women over 30. Rejuvenate in the heart of Costa del Sol.";
+const image = "/images/spa-banner.jpg";
+const url = "https://massageartestepona.com/blog";
 ---
 
+<Seo {title} {description} {image} {url} />
 <Layout>
   <Navbar />
 
@@ -20,56 +28,18 @@ let activeFilter = "all";
     <h2
       class="mt-10text-3xl font-semibold tracking-wide text-gray-800 uppercase font-tenor"
     >
-      Blog
+      OUR SERVICES
     </h2>
+    <p class="mt-4 text-lg text-gray-600 italic">
+      A renewing experience awaits you.
+    </p>
   </section>
-  <Filter active="brows" />
+
   <div class="flex flex-wrap justify-center gap-6 px-4">
-    <Services
-      title="Brow / Lashes Tint Tinte cejas / pestañas"
-      image="../images/26083d82-17ab-4711-a11e-390dd7de874a (1).jpeg"
-      description={`
-      <p>(EN) Our skilled technician will carefully select a shade that complements your hair color tone, giving your brows / lashes a fuller and more pronounced look.</p>
-      <p>(ES) Nuestro técnico capacitado selecionará cuidadosamente un tono que complemente el color de su cabello y el tono de su piel, dándole a sus cejas / pestañas una apariencia más completa y pronunciada.</p>
-`}
-      pricehome="20€"
-      pricesalon=""
-      filter="brows"
-      active="brows"
-      hideSecondItem="hidden"
-      hideFirstItem="hidden"
-    />
-
-    <Services
-      title="Brow shaping - waxing - threading Moldeado de cejas - cera - hilo"
-      image="../images/106a16df-017b-44a2-8538-197a33a26438.jpeg"
-      description={`
-      <p>(EN)  Say goodbye to unwanted stray hairs and achieve smooth, well-groomed brows with our brow waxing and threading services.</p>
-      <p>(ES)  Dígale adiós a los vellos sueltos no desea y consiga unas cejas suaves y bien cuidadas con nuestros servicios de depilación con hilo.</p>
-`}
-      pricehome="20€"
-      pricesalon=""
-      filter="brows"
-      active="brows"
-      hideSecondItem="hidden"
-      hideFirstItem="hidden"
-    />
-
-    <Services
-      title="Brow shaping - waxing - threading Moldeado de cejas - cera - hilo"
-      image="../images/b9c16e04-726c-4e8b-a233-c2e6e915e599.webp"
-      description={`
-      <p>(EN) A lash lift curls your lash from base to tip so that you can see the full length.
-.</p>
-      <p>(ES) Un lifting de pestañas riza las pestaña desde 
-      la base hasta la punta para que puedo ver toda su longitud..</p>
-`}
-      pricehome="20€"
-      pricesalon=""
-      filter="brows"
-      active="brows"
-      hideSecondItem="hidden"
-      hideFirstItem="hidden"
+    <Blog
+      title="test"
+      image="../images/b8ebec07-fc37-4aae-aa18-6e51e3acd1a8.webp"
+      description="test"
     />
   </div>
   <a
