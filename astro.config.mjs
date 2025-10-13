@@ -1,9 +1,12 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
-
 import jopSoftwarecookieconsent from '@jop-software/astro-cookieconsent';
+import sitemap from '@astrojs/sitemap';
 
-// https://astro.build/config
 export default defineConfig({
-  integrations: [jopSoftwarecookieconsent()]
+  site: 'https://massageartestepona.com', // replace with your actual domain
+  integrations: [
+    jopSoftwarecookieconsent(),
+    sitemap()
+  ]
 });
