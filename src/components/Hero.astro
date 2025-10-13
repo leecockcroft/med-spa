@@ -1,56 +1,8 @@
-<!-- ---
+---
 import "../styles/global.css";
+import AOS from "aos";
 ---
 
-<section
-  style="background-color: rgb(246, 245, 241);"
-  class="lg:mb-20 lg:flex lg:justify-around lg:max-w-[1000px] lg:mx-auto bg-blue-50 text-center hero-section flex-col md:flex md:flex-row items-center"
->
-  <div class="hero-section-left">
-    <img
-      src="../images/IMG_4778.webp"
-      alt="MedSpa Logo"
-      class="w-full h-auto mb-4 hero-image"
-    />
-  </div>
-  <div
-    class="lg:pt-20 pb-10 mb-10 mt-5 hero-section-right text-center lg:max-w-md lg:mx-auto"
-    data-aos="fade-right"
-    data-aos-delay="100"
-  >
-    <p
-      class="m-auto text-sm text-center mb-6 typing-text lg:max-w-sm lg:mx-auto max-w-xs"
-    >
-      Massage & Spa at Your Doorstep, that's how Luxary supposed To Be
-    </p>
-    <h1 class="header-title text-5xl mb-8 block max-w-xs mx-auto">
-      Wellness at your pace in your spare.
-    </h1>
-
-    <a href="#contact" class="contact-cta text-white px-6 py-2 rounded">
-      Book Now
-    </a>
-  </div>
-</section>
-
-<style>
-  .header-title {
-  }
-
-  h1 {
-    font-family: "Sora", "Sora Placeholder", sans-serif;
-  }
-
-  section p {
-    font-family: "Tenor Sans", "Tenor Sans Placeholder", sans-serif;
-  }
-
-  .hero-image {
-    height: 500px;
-    width: 600px;
-    object-fit: cover;
-  }
-</style> -->
 <section class="relative w-full h-screen overflow-hidden mb-32">
   <!-- Video Background -->
   <video
@@ -67,14 +19,16 @@ import "../styles/global.css";
   <div class="overlay absolute inset-0 bg-black/40 z-10"></div>
 
   <!-- Text Content -->
-  <div
-    class="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-6"
-  >
-    <h1 class="text-white text-4xl md:text-6xl font-serif mb-4">
+  <div class="absolute inset-0 z-20 hero-text text-center px-6">
+    <h1
+      data-aos="fade-up"
+      data-aos-delay="10"
+      class="text-white text-4xl md:text-6xl font-serif mb-4"
+    >
       <!-- Restore Your Body. Reconnect With Your Soul. --> Wellness at your pace
       in your spare.
     </h1>
-    <p class="text-white text-lg md:text-xl mb-6 max-w-2xl">
+    <p class="text-white text-lg md:text-xl mb-6 max-w-2xl hero-p-tag">
       <!-- Luxury wellness retreats, personal training, and holistic beauty care in a
       serene coastal setting. -->
       Massage & Spa at Your Doorstep, that's how Luxury supposed To Be
@@ -89,6 +43,17 @@ import "../styles/global.css";
 </section>
 
 <style>
-  .overlay {
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .hero-p-tag {
+    margin-top: -10rem;
+    font-size: 0.9rem;
   }
 </style>
+<script>
+  AOS.init();
+</script>
