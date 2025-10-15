@@ -13,84 +13,33 @@ import "../styles/global.css";
 let activeFilter = "all";
 ---
 
-<Layout>
-  <Navbar />
+<Layout
+  title="Couples Massage in Estepona | Shared Relaxation and Wellness"
+  description="Reconnect and unwind together with a couples massage in Estepona. Enjoy side-by-side treatments tailored to your needs perfect for romantic escapes or shared self-care moments."
+  canonical="https://massageartestepona.com/couples-package"
+/>
+<Navbar />
 
-  <section class="bg-[#f6f5f1] py-16 px-6 text-center">
-    <h2
-      class="mt-10text-3xl font-semibold tracking-wide text-gray-800 uppercase font-tenor"
-    >
-      OUR SERVICES
-    </h2>
-    <p class="mt-4 text-lg text-gray-600 italic">
-      A renewing experience awaits you.
-    </p>
-  </section>
-  <Filter active="couplespackage" />
-  <div class="flex flex-wrap justify-center gap-6 px-4">
-    <Services
-      title={`✨COUPLE MOBILE MASSAGE & SPA✨`}
-      }
-      image="../images/b2517bdc-381d-452f-8c32-e75074244e45.webp"
-      description={`
+<section class="bg-[#f6f5f1] py-16 px-6 text-center">
+  <h2
+    class="mt-10text-3xl font-semibold tracking-wide text-gray-800 uppercase font-tenor"
+  >
+    OUR SERVICES
+  </h2>
+  <p class="mt-4 text-lg text-gray-600 italic">
+    A renewing experience awaits you.
+  </p>
+</section>
+<Filter active="couplespackage" />
+<div class="flex flex-wrap justify-center gap-6 px-4">
+  <Services
+    title={`✨COUPLE MOBILE MASSAGE & SPA✨`}
+    }
+    image="../images/b2517bdc-381d-452f-8c32-e75074244e45.webp"
+    description={`
       <p>We all know how easily routine can take over in a relationship. Once it settles in, it’s not always easy to reconnect or step out of the everyday spiral.</p>
 
 <p>That’s why we’ve created something special – an experience designed to surprise you and bring you closer.</p>`}
-      hideFirstItem="hidden"
-      pricesalon=""
-      filter="couplespackage"
-      active="couplespackage"
-      hideSecondItem="hidden"
-    />
-
-    <Services
-      title={`PACK 1`}
-      }
-      image="../images/9224ba73-4175-4206-9953-c7ab285d6ab2.webp"
-      description={`
-     
-     
-      <ul>
- <li>Goddess Bath</li>
-<li>⁠Body exfoliation + Scented Balm</li>
-<li>⁠Luxury Manicure & Pedicure</li> </ul>`}
-      hideFirstItem="hidden"
-      pricesalon=""
-      filter="couplespackage"
-      active="couplespackage"
-      hideSecondItem="hidden"
-    />
-
-    <Services
-      title={`PACK 2`}
-      }
-      image="../images/3b783b66-b1cb-4b37-8b81-9307efd543bf.jpeg"
-      description={`
-   
-   
-    <ul>
-<li>Foot Spa</li>
-<li>Relaxing or deep tissue massage</li>
-<li>Facial treatment</li> </ul>`}
-      hideFirstItem="hidden"
-      pricesalon=""
-      filter="couplespackage"
-      active="couplespackage"
-      hideSecondItem="hidden"
-    />
-  </div>
-
-  <Services
-    title={`PACK 3`}
-    }
-    image="../images/997a178e-d0e7-405a-b0d1-0a58196e3bac.jpeg"
-    description={`
-
-
-<ul>
-<li>Duo Massage</li>
-
-<li>Couple facial treatment</li> </ul>`}
     hideFirstItem="hidden"
     pricesalon=""
     filter="couplespackage"
@@ -99,10 +48,65 @@ let activeFilter = "all";
   />
 
   <Services
-    title={`PACK 4`}
+    title={`PACK 1`}
     }
-    image="../images/4fa05887-4dd2-48b4-be65-92867d86e031.jpeg"
+    image="../images/9224ba73-4175-4206-9953-c7ab285d6ab2.webp"
     description={`
+     
+     
+      <ul>
+ <li>Goddess Bath</li>
+<li>⁠Body exfoliation + Scented Balm</li>
+<li>⁠Luxury Manicure & Pedicure</li> </ul>`}
+    hideFirstItem="hidden"
+    pricesalon=""
+    filter="couplespackage"
+    active="couplespackage"
+    hideSecondItem="hidden"
+  />
+
+  <Services
+    title={`PACK 2`}
+    }
+    image="../images/3b783b66-b1cb-4b37-8b81-9307efd543bf.jpeg"
+    description={`
+   
+   
+    <ul>
+<li>Foot Spa</li>
+<li>Relaxing or deep tissue massage</li>
+<li>Facial treatment</li> </ul>`}
+    hideFirstItem="hidden"
+    pricesalon=""
+    filter="couplespackage"
+    active="couplespackage"
+    hideSecondItem="hidden"
+  />
+</div>
+
+<Services
+  title={`PACK 3`}
+  }
+  image="../images/997a178e-d0e7-405a-b0d1-0a58196e3bac.jpeg"
+  description={`
+
+
+<ul>
+<li>Duo Massage</li>
+
+<li>Couple facial treatment</li> </ul>`}
+  hideFirstItem="hidden"
+  pricesalon=""
+  filter="couplespackage"
+  active="couplespackage"
+  hideSecondItem="hidden"
+/>
+
+<Services
+  title={`PACK 4`}
+  }
+  image="../images/4fa05887-4dd2-48b4-be65-92867d86e031.jpeg"
+  description={`
 
 
 <ul>
@@ -111,13 +115,13 @@ let activeFilter = "all";
 <li>Luxury manicure & pedicure</li>
 <li>Back Treatment</li>
 <li>Back or full body massage</li>  </ul>`}
-    hideFirstItem="hidden"
-    pricesalon=""
-    filter="couplespackage"
-    active="couplespackage"
-    hideSecondItem="hidden"
-  />
-</Layout>
+  hideFirstItem="hidden"
+  pricesalon=""
+  filter="couplespackage"
+  active="couplespackage"
+  hideSecondItem="hidden"
+/>
+
 <a
   href="https://wa.me/34613945010"
   class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600
