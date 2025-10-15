@@ -15,97 +15,105 @@ let activeFilter = "all";
 
 <Layout
   title=" Massage in Estepona | Deep Tissue, Sports & Relaxation"
-  description="Discover expert massage therapy in Estepona. From Relaxing , deep tissue to aromatherapy, relieve stress and pain with personalized treatments."
+  description="Discover expert massage therapy in Estepona. From Relaxing, deep tissue to aromatherapy, relieve stress and pain with personalized treatments."
   canonical="https://massageartestepona.com/massage"
 >
   <Navbar />
 
   <section class="bg-[#f6f5f1] py-16 px-6 text-center">
-    <h2
-      class="mt-10 text-3xl font-semibold tracking-wide text-gray-800 uppercase font-tenor"
-    >
-      OUR SERVICES
-    </h2>
-    <p class="mt-4 text-lg text-gray-600 italic">
-      A renewing experience awaits you.
+    <h1 class="text-3xl font-semibold mb-6 mt-6">
+      Professional Massage Therapy in Estepona
+    </h1>
+    <p>
+      Experience expert massage therapy in Estepona designed to relieve stress,
+      ease pain, and restore balance.
     </p>
-  </section>
-  <Filter active="massage" />
-  <div class="flex flex-wrap justify-center gap-6 px-4">
-    <Services
-      title="Back, Neck, Shoulders & Head massage"
-      image="../images/7ff5db47-0fd9-4c8c-8c93-b4640ab5ce8b.webp"
-      description="Special signature massage for the overthinkers and hyperactive, silences the mind and immediately relieves headaches, as if freed from a heavy weight 45mn:"
-      pricehome="Home: 45 min – 100€"
-      pricesalon="Salon: 45 min – 65€"
-      filter="massage"
-    />
 
-    <Services
-      title="Kobido Japanese Facial Massage"
-      image="../images/45b0987c-ad77-4f8b-85c1-e00628c3d898.jpeg"
-      description="An ancestral practice that treats the face as a whole—muscles, blood system, lymphatic flow, and bones. Enhances collagen production, decongests puffiness, and detoxifies. Includes neck and bust."
-      pricehome="Home: 60 min – 110€, 90 min – 150€"
-      pricesalon="Salon: 60 min – 80€, 90 min – 110€"
-      filter="massage"
-    />
+    <p>
+      At Massage Art, we specialise in deep tissue, sports, and relaxation
+      techniques, as well as aromatherapy sessions that support your overall
+      wellness.
+    </p>
+    <div class="mt-6">
+      <Filter active="massage" />
 
-    <Services
-      title="Sport Dynamic"
-      image="../images/a0ccfe6c-9b61-44f0-8c34-856cbc6aa7fc.webp"
-      description="An intensive massage to improve muscle flexibility, increase blood flow, and reduce muscle tension. Ideal as part of an athlete’s regular training regimen."
-      pricehome="Home: 30 min – 70€, 60 min – 140€, 90 min – 200€"
-      pricesalon="Salon: 30 min – 55€, 60 min – 100€, 90 min – 145€"
-      filter="massage"
-    />
+      <div class="flex flex-wrap justify-center gap-6 px-4">
+        <Services
+          title="Back, Neck, Shoulders & Head massage"
+          image="../images/7ff5db47-0fd9-4c8c-8c93-b4640ab5ce8b.webp"
+          description="Special signature massage for the overthinkers and hyperactive, silences the mind and immediately relieves headaches, as if freed from a heavy weight 45mn:"
+          pricehome="Home: 45 min – 100€"
+          pricesalon="Salon: 45 min – 65€"
+          filter="massage"
+        />
 
-    <Services
-      title="Brasilian Bodycontour"
-      image="../images/694585cb-e53f-41fe-b98e-087cb08c953e.webp"
-      description="Stimulates circulation and promotes lymphatic drainage. Uses gentle, rhythmic pressure to detoxify the body, reduce bloating, and leave you feeling energized."
-      pricehome="Home: 30 min – 65€, 60 min – 130€, 90 min – 190€"
-      pricesalon="Salon: 30 min – 50€, 60 min – 95€, 90 min – 135€"
-      filter="massage"
-    />
+        <Services
+          title="Kobido Japanese Facial Massage"
+          image="../images/45b0987c-ad77-4f8b-85c1-e00628c3d898.jpeg"
+          description="An ancestral practice that treats the face as a whole—muscles, blood system, lymphatic flow, and bones. Enhances collagen production, decongests puffiness, and detoxifies. Includes neck and bust."
+          pricehome="Home: 60 min – 110€, 90 min – 150€"
+          pricesalon="Salon: 60 min – 80€, 90 min – 110€"
+          filter="massage"
+        />
 
-    <Services
-      title="Deep Tissues"
-      image="../images/0646cf9e-1f8d-4e84-bac8-64aa0aa10b7d.webp"
-      description="Particularly beneficial to ease stiffness and relieve deep tension. Uses medium to strong pressure to reach deeplayers of muscles for total rejuvenation."
-      pricehome="Home: 30 min – 65€, 60 min – 120€, 90 min – 180€"
-      pricesalon="Salon: 30 min – 45€, 60 min – 85€, 90 min – 120€"
-      filter="massage"
-    />
+        <Services
+          title="Sport Dynamic"
+          image="../images/a0ccfe6c-9b61-44f0-8c34-856cbc6aa7fc.webp"
+          description="An intensive massage to improve muscle flexibility, increase blood flow, and reduce muscle tension. Ideal as part of an athlete’s regular training regimen."
+          pricehome="Home: 30 min – 70€, 60 min – 140€, 90 min – 200€"
+          pricesalon="Salon: 30 min – 55€, 60 min – 100€, 90 min – 145€"
+          filter="massage"
+        />
 
-    <Services
-      title="Pure Relaxation"
-      image="../images/2a1274c8-6b53-439f-9440-ea06d1810918.webp"
-      description="Soothing massage,designed to melt away stress and restore deep calm. Using gentle pressure, slow flowing movements ideal escape from daily stress."
-      pricehome="Home: 30 min – 65€, 60 min – 120€, 90 min – 180€"
-      pricesalon="Salon: 30 min – 40€, 60 min – 75€, 90 min – 110€"
-      filter="massage"
-    />
-  </div>
-  <a
-    href="https://wa.me/34613945010"
-    class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600
+        <Services
+          title="Brasilian Bodycontour"
+          image="../images/694585cb-e53f-41fe-b98e-087cb08c953e.webp"
+          description="Stimulates circulation and promotes lymphatic drainage. Uses gentle, rhythmic pressure to detoxify the body, reduce bloating, and leave you feeling energized."
+          pricehome="Home: 30 min – 65€, 60 min – 130€, 90 min – 190€"
+          pricesalon="Salon: 30 min – 50€, 60 min – 95€, 90 min – 135€"
+          filter="massage"
+        />
+
+        <Services
+          title="Deep Tissues"
+          image="../images/0646cf9e-1f8d-4e84-bac8-64aa0aa10b7d.webp"
+          description="Particularly beneficial to ease stiffness and relieve deep tension. Uses medium to strong pressure to reach deeplayers of muscles for total rejuvenation."
+          pricehome="Home: 30 min – 65€, 60 min – 120€, 90 min – 180€"
+          pricesalon="Salon: 30 min – 45€, 60 min – 85€, 90 min – 120€"
+          filter="massage"
+        />
+
+        <Services
+          title="Pure Relaxation"
+          image="../images/2a1274c8-6b53-439f-9440-ea06d1810918.webp"
+          description="Soothing massage,designed to melt away stress and restore deep calm. Using gentle pressure, slow flowing movements ideal escape from daily stress."
+          pricehome="Home: 30 min – 65€, 60 min – 120€, 90 min – 180€"
+          pricesalon="Salon: 30 min – 40€, 60 min – 75€, 90 min – 110€"
+          filter="massage"
+        />
+      </div>
+      <a
+        href="https://wa.me/34613945010"
+        class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600
     text-white p-4 rounded-full shadow-lg"
-    target="_blank"
-    rel="noopener
+        target="_blank"
+        rel="noopener
     noreferrer"
-    aria-label="Chat on WhatsApp"
-  >
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="white"
-      viewBox="0 0 24 24"
-      width="24"
-      height="24"
-    >
-      <path
-        d="M20.52 3.48A11.94 11.94 0 0012 0C5.37 0 .01 5.37.01 12c0 2.11.55 4.17 1.6 5.99L0 24l6.26-1.64A11.94 11.94 0 0012 24c6.63 0 12-5.37 12-12 0-3.19-1.24-6.2-3.48-8.52zM12 22c-1.93 0-3.81-.5-5.47-1.45l-.39-.23-3.71.97.99-3.61-.25-.37A9.94 9.94 0 012 12c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10zm5.13-7.47c-.28-.14-1.65-.81-1.9-.9-.25-.09-.43-.14-.61.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.44-2.25-1.4-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.32.42-.48.14-.16.18-.28.28-.46.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.28-.96.94-.96 2.3s.99 2.66 1.13 2.85c.14.18 1.95 2.98 4.73 4.18.66.28 1.17.45 1.57.58.66.21 1.26.18 1.74.11.53-.08 1.65-.67 1.88-1.32.23-.65.23-1.21.16-1.32-.07-.11-.25-.18-.53-.32z"
-      ></path>
-    </svg>
-  </a>
-  <Footer />
+        aria-label="Chat on WhatsApp"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="white"
+          viewBox="0 0 24 24"
+          width="24"
+          height="24"
+        >
+          <path
+            d="M20.52 3.48A11.94 11.94 0 0012 0C5.37 0 .01 5.37.01 12c0 2.11.55 4.17 1.6 5.99L0 24l6.26-1.64A11.94 11.94 0 0012 24c6.63 0 12-5.37 12-12 0-3.19-1.24-6.2-3.48-8.52zM12 22c-1.93 0-3.81-.5-5.47-1.45l-.39-.23-3.71.97.99-3.61-.25-.37A9.94 9.94 0 012 12c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10zm5.13-7.47c-.28-.14-1.65-.81-1.9-.9-.25-.09-.43-.14-.61.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.44-2.25-1.4-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.32.42-.48.14-.16.18-.28.28-.46.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.28-.96.94-.96 2.3s.99 2.66 1.13 2.85c.14.18 1.95 2.98 4.73 4.18.66.28 1.17.45 1.57.58.66.21 1.26.18 1.74.11.53-.08 1.65-.67 1.88-1.32.23-.65.23-1.21.16-1.32-.07-.11-.25-.18-.53-.32z"
+          ></path>
+        </svg>
+      </a>
+      <Footer />
+    </div>
+  </section>
 </Layout>

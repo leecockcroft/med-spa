@@ -4,6 +4,24 @@
   font-family: 'Tenor Sans', 'Tenor Sans Placeholder', sans-serif;
 }
 
+nav {
+  
+  width:100%;
+ 
+}
+
+header{
+  width:100%; 
+  max-width:1000px;
+}
+
+.logo{
+ width:14.2rem;
+    height: 3.2rem;
+    position: absolute;
+    left: -1.3rem;
+    top: 0.5rem;
+}
 section{
   font-family: 'Tenor Sans', 'Tenor Sans Placeholder', sans-serif;
   background:rgb(246, 245, 241);

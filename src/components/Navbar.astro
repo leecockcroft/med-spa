@@ -2,144 +2,155 @@
 import "../styles/global.css";
 ---
 
-<nav class="bg-white shadow-md fixed w-full z-50">
+<nav class="bg-white shadow-md fixed z-50 max-w-screen-lg">
   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center h-16 relative">
       <!-- Logo -->
+      <a href="/">
+        <img
+          src="../images/LOGO.png"
+          alt="Beneficial Belt Logo"
+          class="h-10 w-auto"
+        />
+      </a>
       <div class="flex-shrink-0">
-        <a href="/">
-          <span>Massaage Art</span><br />
-          <span>Estepona</span>
-        </a>
-      </div>
-
-      <!-- Burger Menu Button (Mobile Only) -->
-      <div class="md:hidden">
-        <button
-          id="mobile-menu-button"
-          class="text-gray-700 focus:outline-none"
-        >
-          <svg
-            class="h-6 w-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
-      </div>
-
-      <!-- Desktop Navigation (Centered) -->
-      <div
-        class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 space-x-8 items-center"
-      >
-        <a href="/" class="text-gray-700 hover:text-blue-600 font-medium"
-          >Home</a
-        >
-        <div class="relative">
+        <!-- Burger Menu Button (Mobile Only) -->
+        <div class="md:hidden">
           <button
-            id="services-button"
-            class="text-gray-700 hover:text-blue-600 font-medium focus:outline-none flex items-center gap-1"
+            id="mobile-menu-button"
+            class="text-gray-700 focus:outline-none"
           >
-            Services <span class="text-xs">▾</span>
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
           </button>
-          <div
-            id="services-dropdown"
-            class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md hidden z-10"
-          >
-            <a
-              href="/massage"
-              class="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50"
-              >Massage</a
-            >
-            <a
-              href="/ritual-spa"
-              class="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50"
-              >Ritual Spa</a
-            >
-            <a
-              href="/manicure-and-pedicure"
-              class="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50"
-              >Manicure & Pedicure</a
-            >
-            <a
-              href="/brows-and-lashes"
-              class="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50"
-              >Brows & Lashes</a
-            >
-            <a
-              href="/waxing"
-              class="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50"
-              >Waxing</a
-            >
-            <a
-              href="/permanant-makeup"
-              class="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50"
-              >Permanant Makeup</a
-            >
-          </div>
         </div>
 
-        <a href="/contact" class="text-gray-700 hover:text-blue-600 font-medium"
-          >Contact</a
+        <!-- Desktop Navigation (Centered) -->
+        <div
+          class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 space-x-8 items-center"
         >
+          <a href="/" class="text-gray-700 hover:text-blue-600 font-medium"
+            >Home</a
+          >
+          <div class="relative">
+            <button
+              id="services-button"
+              class="text-gray-700 hover:text-blue-600 font-medium focus:outline-none flex items-center gap-1"
+            >
+              Services <span class="text-xs">▾</span>
+            </button>
+            <div
+              id="services-dropdown"
+              class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md hidden z-10"
+            >
+              <a
+                href="/massage"
+                class="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50"
+                >Massage</a
+              >
+              <a
+                href="/ritual-spa"
+                class="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50"
+                >Ritual Spa</a
+              >
+              <a
+                href="/manicure-and-pedicure"
+                class="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50"
+                >Manicure & Pedicure</a
+              >
+              <a
+                href="/brows-and-lashes"
+                class="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50"
+                >Brows & Lashes</a
+              >
+              <a
+                href="/waxing"
+                class="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50"
+                >Waxing</a
+              >
+              <a
+                href="/permanant-makeup"
+                class="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50"
+                >Permanant Makeup</a
+              >
+            </div>
+          </div>
+
+          <a
+            href="/contact"
+            class="text-gray-700 hover:text-blue-600 font-medium">Contact</a
+          >
+        </div>
       </div>
     </div>
+
+    <!-- Mobile Menu -->
+    <div
+      id="mobile-menu"
+      class="md:hidden hidden px-4 pt-2 pb-4 space-y-2 w-full"
+    >
+      <a href="/massage" class="block text-gray-700 hover:text-blue-600"
+        >Massage</a
+      >
+      <a href="/ritual-spa" class="block text-gray-700 hover:text-blue-600"
+        >Ritual Spa</a
+      >
+      <a
+        href="/manicure-pedicure"
+        class="block text-gray-700 hover:text-blue-600">Manicure and Pedicure</a
+      >
+      <a href="/waxing" class="block text-gray-700 hover:text-blue-600"
+        >Waxing</a
+      >
+      <a
+        href="/brows-and-lashes"
+        class="block text-gray-700 hover:text-blue-600">Brows and Lashes</a
+      >
+      <a
+        href="/permanant-makeup"
+        class="block text-gray-700 hover:text-blue-600">Permanant Makeup</a
+      >
+
+      <a
+        href="/contact"
+        class="text-center block contact-cta text-white px-4 py-2 rounded-md hover:bg-blue-700"
+        >Contact</a
+      >
+    </div>
+
+    <script>
+      const servicesButton = document.getElementById("services-button");
+      const servicesDropdown = document.getElementById("services-dropdown");
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      servicesButton.addEventListener("click", (e) => {
+        e.stopPropagation();
+        servicesDropdown.classList.toggle("hidden");
+      });
+
+      document.addEventListener("click", (e) => {
+        if (
+          !servicesDropdown.contains(e.target) &&
+          e.target !== servicesButton
+        ) {
+          servicesDropdown.classList.add("hidden");
+        }
+      });
+
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
   </div>
-
-  <!-- Mobile Menu -->
-  <div
-    id="mobile-menu"
-    class="md:hidden hidden px-4 pt-2 pb-4 space-y-2 w-full"
-  >
-    <a href="/massage" class="block text-gray-700 hover:text-blue-600"
-      >Massage</a
-    >
-    <a href="/ritual-spa" class="block text-gray-700 hover:text-blue-600"
-      >Ritual Spa</a
-    >
-    <a href="/manicure-pedicure" class="block text-gray-700 hover:text-blue-600"
-      >Manicure and Pedicure</a
-    >
-    <a href="/waxing" class="block text-gray-700 hover:text-blue-600">Waxing</a>
-    <a href="/brows-and-lashes" class="block text-gray-700 hover:text-blue-600"
-      >Brows and Lashes</a
-    >
-    <a href="/permanant-makeup" class="block text-gray-700 hover:text-blue-600"
-      >Permanant Makeup</a
-    >
-
-    <a
-      href="/contact"
-      class="text-center block contact-cta text-white px-4 py-2 rounded-md hover:bg-blue-700"
-      >Contact</a
-    >
-  </div>
-
-  <script>
-    const servicesButton = document.getElementById("services-button");
-    const servicesDropdown = document.getElementById("services-dropdown");
-    const mobileMenuButton = document.getElementById("mobile-menu-button");
-    const mobileMenu = document.getElementById("mobile-menu");
-
-    servicesButton.addEventListener("click", (e) => {
-      e.stopPropagation();
-      servicesDropdown.classList.toggle("hidden");
-    });
-
-    document.addEventListener("click", (e) => {
-      if (!servicesDropdown.contains(e.target) && e.target !== servicesButton) {
-        servicesDropdown.classList.add("hidden");
-      }
-    });
-
-    mobileMenuButton.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
-    });
-  </script>
 </nav>
