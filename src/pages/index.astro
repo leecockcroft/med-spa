@@ -10,58 +10,63 @@ import Aboutme from "../components/Aboutme.astro";
 import Testimonal from "../components/Testimonal.astro";
 ---
 
-<Layout style="background-color: rgb(246, 245, 241);">
-  <Navbar style="background-color: rgb(246, 245, 241);" />
-  <Hero style="background-color: rgb(246, 245, 241);" />
-  <h2 class="text-3xl font-semibold mb-6 service-title">Services</h2>
-  <div
-    class="mb-32 gap-y-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-items-center"
-    style="background-color: rgb(246, 245, 241);"
-  >
-    <ServiceItems
-      image="../images/7ff5db47-0fd9-4c8c-8c93-b4640ab5ce8b.webp"
-      title="Massage"
-      url="/massage"
-    />
-    <ServiceItems
-      image="../images/IMG_4794.webp"
-      title="Ritual Spa"
-      url="/ritual"
-    />
-    <ServiceItems
-      image="../images/IMG_4786.webp"
-      title="Manicure and Pedicure"
-      url="/manicure"
-    />
+<Layout
+  title="Massage Art Estepona | Beauty & Wellness with Heart"
+  description="Discover luxury massage and beauty treatments in Estepona and Marbella. Mobile and studio services tailored to your wellbeing."
+  canonical="https://massageartestepona.com/"
+  style="background-color: rgb(246, 245, 241);"
+/>
+<Navbar style="background-color: rgb(246, 245, 241);" />
+<Hero style="background-color: rgb(246, 245, 241);" />
+<h2 class="text-3xl font-semibold mb-6 service-title">Services</h2>
+<div
+  class="mb-32 gap-y-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-items-center"
+  style="background-color: rgb(246, 245, 241);"
+>
+  <ServiceItems
+    image="../images/7ff5db47-0fd9-4c8c-8c93-b4640ab5ce8b.webp"
+    title="Massage"
+    url="/massage"
+  />
+  <ServiceItems
+    image="../images/IMG_4794.webp"
+    title="Ritual Spa"
+    url="/ritual"
+  />
+  <ServiceItems
+    image="../images/IMG_4786.webp"
+    title="Manicure and Pedicure"
+    url="/manicure"
+  />
 
-    <ServiceItems
-      image="../images/a2560888-de37-4bd4-9acc-3b6a41843fc7.webp"
-      title="Brows and Lashes"
-      url="/brows"
-    />
+  <ServiceItems
+    image="../images/a2560888-de37-4bd4-9acc-3b6a41843fc7.webp"
+    title="Brows and Lashes"
+    url="/brows"
+  />
 
-    <ServiceItems
-      image="../images/b8e994d8-cea3-453b-9205-5036224d0b82.jpeg"
-      title="Waxing"
-      url="/waxing"
-    />
-    <ServiceItems
-      image="../images/eb9b1c4d-f003-46e8-a3c5-60b2c951dce2.webp"
-      title="Permanant Makeup"
-      url="/permanantmakeup"
-    />
+  <ServiceItems
+    image="../images/b8e994d8-cea3-453b-9205-5036224d0b82.jpeg"
+    title="Waxing"
+    url="/waxing"
+  />
+  <ServiceItems
+    image="../images/eb9b1c4d-f003-46e8-a3c5-60b2c951dce2.webp"
+    title="permanent Makeup"
+    url="/permanentmakeup"
+  />
 
-    <ServiceItems
-      image="../images/b2517bdc-381d-452f-8c32-e75074244e45.webp"
-      title="Couple Package"
-      url="/couplespackage"
-    />
-  </div>
-  <h2 class="text-3xl font-semibold mb-6">About Me</h2>
-  <Aboutme style="background-color: rgb(246, 245, 241);" />
-  <h2 class="text-3xl font-semibold mb-6">Customer Reviews</h2>
-  <Testimonal />
-</Layout>
+  <ServiceItems
+    image="../images/b2517bdc-381d-452f-8c32-e75074244e45.webp"
+    title="Couple Package"
+    url="/couplespackage"
+  />
+</div>
+<h2 class="text-3xl font-semibold mb-6">About Me</h2>
+<Aboutme style="background-color: rgb(246, 245, 241);" />
+<h2 class="text-3xl font-semibold mb-6">Customer Reviews</h2>
+<Testimonal />
+
 <ContactForm />
 <a
   href="https://wa.me/34613945010"

@@ -1,0 +1,118 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Hero from "../components/Hero.astro";
+import Services from "../components/Services.astro";
+import ContactForm from "../components/ContactForm.astro";
+import Footer from "../components/Footer.astro";
+import json from "../components/services.json";
+import Filter from "../components/Filter.astro";
+import "../styles/global.css";
+
+let activeFilter = "all";
+---
+
+<Layout
+  title=" Permanent Make-Up in Estepona | Brows, Lips & Eyeliner"
+  description="Enhance your natural beauty with permanent make-up in Estepona. Expert microblading, Powderbrows, lip blush, and eyeliner for the most natural look and long-lasting results."
+  canonical="https://massageartestepona.com/permanent-makeup"
+/>
+
+<Navbar />
+
+<section class="bg-[#f6f5f1] py-16 px-6 text-center">
+  <h1 class="text-3xl font-semibold mb-6 mt-6">
+    Permanent Make Up in Estepona. Brows, Lips and Eyeliner
+  </h1>
+
+  <p class="mt-4 text-gray-700">
+    Enhance your natural beauty with expert permanent make up in Estepona. I
+    specialise in microblading, Powderbrows, lip blush, and eyeliner treatments
+    that deliver long-lasting, flawless results
+  </p>
+
+  <div class="mt-6"></div>
+</section>
+
+<Filter active="permanentmakeup" />
+<div class="flex flex-wrap justify-center gap-6 px-4">
+  <Services
+    title="Brow Designer"
+    image="../images/b6ba2207-d7e8-4906-a4e3-8cc570a45ed6.webp"
+    description={`<p>I’m Jenny Benasolo, a dedicated brow artist passionate about creating timeless, natural beauty.<p>
+</br/><p>Since my first training in Paris in 2016, I’ve earned over seven international certifications — including with the prestigious PhiBrows Academy — continually refining my craft in Microblading, PowderBrows, and Lip Blushing.</p>
+
+</br/><p>I believe a perfectly designed brow can do more than frame the face — it can illuminate the eyes, restore confidence, and reveal your natural elegance. Each brow I create is fully tailored to your unique features, avoiding fleeting trends to achieve balance and harmony.</p>
+
+</br/><p>For me, brow artistry is more than technique — it’s about intention, precision, and bespoke care, enhancing beauty in a way that feels authentic and empowering..`}
+    pricehome="Home: 45 min – 100€"
+    pricesalon="Salon: 45 min – 65€"
+    hideFirstItem="hidden"
+    hideSecondItem="hidden"
+    filter="permanentmakeup"
+  />
+
+  <Services
+    title="Micoblading"
+    image="../images/7d223379-3436-4675-ab9e-5b9bdb3ffc54.webp"
+    description={`<p>Microblading is a manual technique applied to the eyebrow area using the hair technique. This means that individual hairs are drawn manually to create a very realistic and natural result.</p></br/><p>At The Perma, the perfect shape for the eyebrows is calculated based on the golden ratio and facial morphology. With the help of the Golden Ratio Divider, the symmetry as well as the suitable shape of the eyebrows is determined. We offer various techniques to correct imperfections, but also to accentuate contours.</p>`}
+    hideFirstItem="hidden"
+    hideSecondItem="hidden"
+    filter="permanent-makup"
+  />
+
+  <Services
+    title="Powder Brows"
+    image="../images/35294f02-c94b-4856-8604-3cce274b4d68.webp"
+    description={`<p>Powder Brows, also known as Ombre Brows, is a semi-permanent makeup treatment designed to give your eyebrows a softly shaded, pixel-perfect finish—similar to the look of well-blended brow powder or pencil.</p><br/><p> Unlike microblading, which mimics individual hairs, Powder Brows uses a machine technique that layers pigment in a gradient style for beautifully filled, natural-looking brows.</p>`}
+    hideFirstItem="hidden"
+    hideSecondItem="hidden"
+    filter="permanent-makup"
+  />
+
+  <Services
+    title="LIP BLUSH"
+    image="../images/7fcfb63b-370d-4e0f-adb9-a741c9738063.webp"
+    description={`<p>Lip Blushing is a gentle, semi-permanent solution that helps restore the shape and color of your lips — especially the Cupid’s bow — giving the illusion of volume and definition, without fillers.
+With age, our lips naturally lose color, become thinner, and may take on a cooler tone. The border of the lips can even become almost invisible.</p>
+<br/><p>
+Each color is carefully selected to suit your unique skin tone, preferences, and style. I always recommend natural tones — they’re elegant, timeless, and flattering on everyone.
+</p><br/>
+<p>➡️Please note: The color will look more vibrant immediately after the session, but it softens by up to 40% for a beautiful, natural result..</p>`}
+    hideFirstItem="hidden"
+    hideSecondItem="hidden"
+    filter="permanent-makup"
+  />
+
+  <Services
+    title="COMBO BROWS"
+    image="../images/1c137cc5-8148-4c19-851f-9c783b20ab2f.webp"
+    description={`<p>A semi-permanent brow technique that blends microbladed hair strokes with soft shading for fuller, natural-yet-defined brows. Ideal for those who want realistic hair strokes in the front and a softly filled tail</p>`}
+    hideFirstItem="hidden"
+    hideSecondItem="hidden"
+    filter="permanent-makup"
+  />
+</div>
+
+<a
+  href="https://wa.me/34613945010"
+  class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600
+    text-white p-4 rounded-full shadow-lg"
+  target="_blank"
+  rel="noopener
+    noreferrer"
+  aria-label="Chat on WhatsApp"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="white"
+    viewBox="0 0 24 24"
+    width="24"
+    height="24"
+  >
+    <path
+      d="M20.52 3.48A11.94 11.94 0 0012 0C5.37 0 .01 5.37.01 12c0 2.11.55 4.17 1.6 5.99L0 24l6.26-1.64A11.94 11.94 0 0012 24c6.63 0 12-5.37 12-12 0-3.19-1.24-6.2-3.48-8.52zM12 22c-1.93 0-3.81-.5-5.47-1.45l-.39-.23-3.71.97.99-3.61-.25-.37A9.94 9.94 0 012 12c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10zm5.13-7.47c-.28-.14-1.65-.81-1.9-.9-.25-.09-.43-.14-.61.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.44-2.25-1.4-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.32.42-.48.14-.16.18-.28.28-.46.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.28-.96.94-.96 2.3s.99 2.66 1.13 2.85c.14.18 1.95 2.98 4.73 4.18.66.28 1.17.45 1.57.58.66.21 1.26.18 1.74.11.53-.08 1.65-.67 1.88-1.32.23-.65.23-1.21.16-1.32-.07-.11-.25-.18-.53-.32z"
+    ></path>
+  </svg>
+</a>
+<Footer />

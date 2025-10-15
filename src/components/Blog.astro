@@ -1,49 +1,54 @@
----
-const {
-  title,
-  hideFirstItem,
-  hideSecondItem,
-  image,
-  description,
-  pricehome,
-  pricesalon,
-  filter,
-  hidden,
-} = Astro.props;
----
-
-<section
-  data-aos="zoom-in"
-  style="background-color: rgb(246, 245, 241);"
-  class={`w-full max-w-[300px] flex-shrink-0 py-6 ${filter} panel flex flex-col h-[600px]`}
->
+<article class="max-w-screen-lg mx-auto px-4 py-10">
+  <!-- Top Image -->
   <img
-    class={`image-service-class ${hidden ? "hidden" : ""}`}
-    src={image}
-    alt={title}
-    class="w-full h-[200px] object-cover rounded shadow mb-4"
+    src="../images/relaxation-costa-del-sol.jpg"
+    alt="Relaxing spa experience on the Costa del Sol"
+    class="w-full h-auto rounded-lg shadow-md mb-8 object-cover"
   />
 
-  <h2 class="text-xl font-semibold text-center mt-4 mb-2 font-class">
-    {title}
-  </h2>
-  <div class="p-4 border rounded shadow">
-    <p set:html={description}>{description}</p>
-    <h3 class={`${hideFirstItem} text-lg font-bold mt-4 mb-2`}>Prices</h3>
-    <ul class="list-disc list-inside">
-      <li class={`${hideFirstItem} li-line-height text-sm`}>
-        <strong>{pricehome}</strong>
-      </li>
-      <li class={`${hideSecondItem} li-line-height text-sm`}>
-        <strong>{pricesalon}</strong>
-      </li>
-    </ul>
-  </div>
-</section>
+  <!-- Title -->
+  <h1 class="text-4xl font-bold text-gray-900 mb-6">
+    The Ultimate Guide to Relaxation on the Costa del Sol
+  </h1>
+  <!-- Intro Paragraph -->
+  <p class="text-lg text-gray-700 mb-6">
+    The Costa del Sol isn’t just a sun-soaked paradise—it’s a sanctuary for
+    relaxation, wellness, and rejuvenation. Whether you're visiting for a
+    romantic escape, a solo retreat, or a pampering weekend, this guide will
+    help you unwind in style.
+  </p>
 
-<style>
-  .li-line-height {
-    line-height: 2.5rem;
-    font-size: 0.8rem;
-  }
-</style>
+  <!-- Sections -->
+  <section class="space-y-6 text-gray-700">
+    <div>
+      <h3 class="text-2xl font-semibold">
+        1. Start with a Couples Massage in Estepona
+      </h3>
+
+      <p>
+        Reconnect and relax with a side by side massage tailored to your needs.
+        At <a href="/couples-package" class="text-blue-600 underline"
+          >Massage Art Estepona</a
+        >, couples can enjoy a romantic escapes or shared self-care moments
+      </p>
+    </div>
+
+    <div>
+      <h3 class="text-2xl font-semibold">2. Pamper Your Hands and Feet</h3>
+      <p>
+        Treat yourself to a luxurious manicure and pedicure. Choose from
+        classic, shellac, or spa treatments that leave your nails flawless and
+        your spirit refreshed. <a
+          href="/manicure-and-pedicure"
+          class="text-blue-600 underline">Explore nail care options</a
+        > in Estepona.
+      </p>
+    </div>
+  </section>
+
+  <style>
+    p {
+      font-family: "tenor sans", "tenor sans placeholder", sans-serif;
+    }
+  </style>
+</article>
