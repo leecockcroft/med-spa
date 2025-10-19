@@ -6,11 +6,11 @@ import "../styles/global.css";
   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center h-16 relative">
       <!-- Logo -->
-      <a href="/">
+      <a href="/" class="image-anchor">
         <img
-          src="/images/LOGO.png"
+          src="/images/logo_black_512x512px.png"
           alt="Massage Art Logo"
-          class="h-10 w-auto"
+          class="h-10 w-auto logo-image"
         />
       </a>
       <div class="flex-shrink-0">
@@ -160,3 +160,20 @@ import "../styles/global.css";
     </script>
   </div>
 </nav>
+<style>
+  .logo-image {
+    width: 100%;
+    height: 100%;
+    transform: scale(0.5);
+  }
+
+  .image-anchor {
+    position: relative;
+  }
+
+  @media (min-width: 768px) {
+    .image-anchor{
+   
+    left: -9rem;
+  }
+</style>

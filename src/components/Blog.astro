@@ -1,5 +1,5 @@
 ---
-const { image } = Astro.props;
+const { image, title, description } = Astro.props;
 ---
 
 <article class="max-w-screen-lg mx-auto px-4 py-10">
@@ -12,47 +12,15 @@ const { image } = Astro.props;
 
   <!-- Title -->
   <h1 class="text-4xl font-bold text-gray-900 mb-6">
-    The Ultimate Guide to Relaxation on the Costa del Sol
+    {title}
   </h1>
-  <!-- Intro Paragraph -->
-  <p class="text-lg text-gray-700 mb-6">
-    The Costa del Sol isn’t just a sun soaked paradise it’s a sanctuary for
-    relaxation, wellness, and rejuvenation. Whether you're visiting for a
-    romantic escape, a solo retreat, or a pampering weekend, this guide will
-    help you unwind in style.
-  </p>
 
-  <!-- Sections -->
-  <section class="space-y-6 text-gray-700">
-    <div>
-      <h3 class="text-2xl font-semibold">
-        1. Start with a Couples Massage in Estepona
-      </h3>
-
-      <p>
-        Reconnect and relax with a side by side massage tailored to your needs.
-        At <a href="/couples-package" class="text-blue-600 underline"
-          >Massage Art Estepona</a
-        >, couples can enjoy a romantic escapes or shared self-care moments
-      </p>
-    </div>
-
-    <div>
-      <h3 class="text-2xl font-semibold">2. Pamper Your Hands and Feet</h3>
-      <p>
-        Treat yourself to a luxurious manicure and pedicure. Choose from
-        classic, shellac, or spa treatments that leave your nails flawless and
-        your spirit refreshed. <a
-          href="/manicure-and-pedicure"
-          class="text-blue-600 underline">Explore nail care options</a
-        > in Estepona.
-      </p>
-    </div>
-  </section>
-
-  <style>
-    p {
-      font-family: "tenor sans", "tenor sans placeholder", sans-serif;
-    }
-  </style>
+  <!-- Injected HTML Description -->
+  <div set:html={description} />
 </article>
+
+<style>
+  p {
+    font-family: "tenor sans", "tenor sans placeholder", sans-serif;
+  }
+</style>
