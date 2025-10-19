@@ -13,6 +13,7 @@ import "../styles/global.css";
           class="h-10 w-auto logo-image"
         />
       </a>
+
       <div class="flex-shrink-0">
         <!-- Burger Menu Button (Mobile Only) -->
         <div class="md:hidden">
@@ -110,7 +111,7 @@ import "../styles/global.css";
         >Ritual Spa</a
       >
       <a
-        href="/manicure-andpedicure"
+        href="/manicure-and-pedicure"
         class="block text-gray-700 hover:text-blue-600">Manicure and Pedicure</a
       >
       <a href="/waxing" class="block text-gray-700 hover:text-blue-600"
@@ -169,11 +170,17 @@ import "../styles/global.css";
 
   .image-anchor {
     position: relative;
+    z-index: -1111;
   }
 
   @media (min-width: 768px) {
-    .image-anchor{
-   
-    left: -9rem;
+    .image-anchor {
+      left: -9rem;
+    }
+
+    #mobile-menu {
+      position: relative;
+      z-index: 40;
+    }
   }
 </style>
