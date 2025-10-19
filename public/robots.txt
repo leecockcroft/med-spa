@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://massageartestepona.com/sitemap-index.xml
