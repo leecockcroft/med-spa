@@ -38,11 +38,19 @@ const { title, description, canonical } = Astro.props;
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     /><link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap"
+      as="style"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap"
       rel="stylesheet"
-    /><link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <link
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css"
+      media="print"
+      onload="this.media='all'"
     />
 
     <script src="https://unpkg.com/taos@latest/dist/taos.js"></script></head
