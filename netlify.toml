@@ -1,0 +1,11 @@
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+    Link = "</_astro/page.CzLmEsHh.js>; rel=preload; as=script"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+    Link = "</_astro/index.D3bKFxa3.css>; rel=preload; as=style"
