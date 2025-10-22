@@ -1,6 +1,6 @@
 ---
 const { children } = Astro.props;
-import "aos/dist/aos.css";
+
 import SplideInit from "../scripts/aos-init.js";
 const { title, description, canonical } = Astro.props;
 import AOSInit from "../components/AOSInit.astro";
@@ -32,6 +32,7 @@ import AOSInit from "../components/AOSInit.astro";
       })(window, document, "script", "dataLayer", "GTM-K86N83BF");
     </script>
     <!-- End Google Tag Manager -->
+    <link rel="preload" as="style" href="/_astro/index.D3bKFxa3.css" />
 
     <link rel="preload" as="image" href="/images/your-poster.webp" />
 
@@ -47,8 +48,6 @@ import AOSInit from "../components/AOSInit.astro";
       media="print"
       onload="this.media='all'"
     />
-
-    <script src="https://unpkg.com/taos@latest/dist/taos.js" defer></script>
   </head>
 
   <body
