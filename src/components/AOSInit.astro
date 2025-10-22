@@ -1,0 +1,18 @@
+---
+// No props needed
+---
+
+<!-- Load AOS library -->
+<script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+<!-- Initialize AOS -->
+<script is:inline>
+  window.addEventListener("DOMContentLoaded", () => {
+    AOS.init({
+      once: true,
+      delay: 0,
+      duration: 600,
+    });
+  });
+</script>

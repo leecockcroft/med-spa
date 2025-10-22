@@ -1,44 +1,45 @@
 ---
+import { Image } from "astro:assets";
+
 import "../styles/global.css";
-import AOS from "aos";
 ---
 
 <section class="relative w-full h-screen overflow-hidden mb-32">
-  <!-- Video Background -->
+  <!-- Mobile Fallback Image -->
+  <div class="absolute inset-0 w-full h-full object-cover z-0 md:hidden">
+    <img
+      src="/images/2a1274c8-6b53-439f-9440-ea06d1810918.webp"
+      alt="Massage and spa background"
+      width="1920"
+      height="1080"
+    />
+  </div>
+
+  <!-- Video Background (Desktop Only) -->
   <video
-    poster="/images/2a1274c8-6b53-439f-9440-ea06d1810918.webp"
     autoplay
     muted
     loop
     playsinline
-    class="absolute inset-0 w-full h-full object-cover z-0"
-    loading="lazy"
-    preload="none"
+    poster="/images/2a1274c8-6b53-439f-9440-ea06d1810918.webp"
+    preload="auto"
+    class="hidden md:block absolute inset-0 w-full h-full object-cover z-0"
   >
     <source src="/videos/IMG_0871-compressed.mp4" type="video/mp4" />
   </video>
 
   <!-- Overlay -->
-  <div class="overlay absolute inset-0 bg-black/40 z-10"></div>
+  <div class="absolute inset-0 bg-black/40 z-10"></div>
 
   <!-- Text Content -->
-  <div class="absolute inset-0 z-20 hero-text text-center px-6">
-    <h1
-      data-aos="fade-left"
-      data-aos-delay="10"
-      class="text-white text-4xl md:text-6xl font-serif mb-4"
-    >
-      <!-- Restore Your Body. Reconnect With Your Soul. --> Wellness at your pace
-      in your space.
+  <div
+    class="absolute inset-0 z-20 flex flex-col justify-center items-center text-center px-6"
+  >
+    <h1 class="text-white text-4xl md:text-6xl font-serif mb-4">
+      Wellness at your pace in your space.
     </h1>
-    <p
-      data-aos="fade-right"
-      data-aos-delay="10"
-      class="text-white text-lg md:text-xl mb-6 max-w-2xl hero-p-tag"
-    >
-      <!-- Luxury wellness retreats, personal training, and holistic beauty care in a
-      serene coastal setting. -->
-      Massage & Spa at Your Doorstep, that's how Luxury supposed To Be
+    <p class="text-white text-lg md:text-xl mb-6 max-w-2xl">
+      Massage & Spa at Your Doorstep — that's how luxury is meant to be.
     </p>
     <a
       href="/massage"
@@ -48,20 +49,3 @@ import AOS from "aos";
     </a>
   </div>
 </section>
-
-<style>
-  .hero-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  /* .hero-p-tag {
-    margin-top: -10rem;
-    font-size: 0.9rem;
-  }  */
-</style>
-<script>
-  AOS.init();
-</script>

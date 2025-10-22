@@ -3,6 +3,7 @@ const { children } = Astro.props;
 import "aos/dist/aos.css";
 import SplideInit from "../scripts/aos-init.js";
 const { title, description, canonical } = Astro.props;
+import AOSInit from "../components/AOSInit.astro";
 ---
 
 <!doctype html>
@@ -31,10 +32,10 @@ const { title, description, canonical } = Astro.props;
       })(window, document, "script", "dataLayer", "GTM-K86N83BF");
     </script>
     <!-- End Google Tag Manager -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"
-    />
+    <link rel="stylesheet" href="/fontawesome-brands.css" />
+    <link rel="stylesheet" href="/brands.css" />
+    <link rel="preload" as="image" href="/images/your-poster.webp" />
+
     <link
       rel="preload"
       href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap"
@@ -48,8 +49,8 @@ const { title, description, canonical } = Astro.props;
       onload="this.media='all'"
     />
 
-    <script src="https://unpkg.com/taos@latest/dist/taos.js"></script></head
-  >
+    <script src="https://unpkg.com/taos@latest/dist/taos.js" defer></script>
+  </head>
 
   <body
     class="bg-white text-gray-800 scroll-pt-[80px] max-w-screen-lg mx-auto"
@@ -65,54 +66,7 @@ const { title, description, canonical } = Astro.props;
     >
     <!-- End Google Tag Manager (noscript) -->
     <slot />
-
-    <!-- <div
-    id="cookie-banner"
-    class="fixed bottom-0 left-0 right-0 bg-gray-800 text-white p-4 text-center z-50"
-  >
-    We use cookies to improve your experience. By using our site, you agree to
-    our cookie policy.
-    <button
-      onclick="acceptCookies()"
-      class="ml-4 bg-green-500 px-3 py-1 rounded">Accept</button
-    >
-  </div>
-
-  <div
-    id="cookie-banner"
-    style="position: fixed; bottom: 20px; left: 20px; background: #fff; border: 1px solid #ccc; padding: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.2); z-index: 9999;"
-  >
-    <p>
-      We use cookies to improve your experience and analyse website traffic. Do
-      you accept?
-    </p>
-    <button id="accept-cookies" style="margin-right: 10px;">Accept</button>
-  </div> -->
-
-    <!-- <script>
-    window.dataLayer = window.dataLayer || [];
-
-    // Check if already accepted
-    if (localStorage.getItem("cookiesAccepted") === "true") {
-      dataLayer.push({ event: "consent_accepted" });
-      const banner = document.getElementById("cookie-banner");
-      if (banner) banner.style.display = "none";
-    }
-
-    // Handle accept click
-    document
-      .getElementById("accept-cookies")
-      .addEventListener("click", function () {
-        localStorage.setItem("cookiesAccepted", "true");
-        document.getElementById("cookie-banner").style.display = "none";
-        dataLayer.push({ event: "consent_accepted" });
-      });
-  </script> -->
   </body>
-  <script>
-    import AOS from "aos";
-    import "aos/dist/aos.css";
 
-    AOS.init();
-  </script>
+  <AOSInit client:idle />
 </html>
