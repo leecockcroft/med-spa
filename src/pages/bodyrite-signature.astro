@@ -1,0 +1,169 @@
+---
+// Imports
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Services from "../components/Services.astro";
+import Filter from "../components/Filter.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/global.css";
+
+// State
+let activeFilter = "all";
+---
+
+<Layout
+  title="Lymphatic Drainage Massage in Estepona | Sculpt, Detox & Rejuvenate"
+  description="Discover expert lymphatic drainage massage treatments in Estepona. Reduce bloating, flush toxins, and sculpt your body with our signature techniques. Book now for radiant skin and revitalized wellness."
+  canonical="https://massageartestepona.com/bodyrite-signature/"
+/>
+
+<Navbar />
+
+<section class="bg-[#f6f5f1] py-16 px-6 text-center">
+  <h1 class="text-3xl font-semibold mb-6 mt-6">
+    Expert Lymphatic Drainage Massage in Estepona for Detox, Sculpting & Skin
+    Renewal
+  </h1>
+
+  <p>
+    Welcome to Massage Art Estepona, your destination for advanced lymphatic
+    drainage massage and sculpting therapies.
+  </p>
+  <br />
+  <p>
+    Our Bodyrite Signature Sculpt&reg;️ treatments and Brazilian techniques are
+    designed to stimulate the lymphatic system, reduce puffiness, eliminate
+    toxins, and enhance circulation.
+  </p>
+  <br />
+  <p>
+    Whether you're seeking targeted contouring or full-body rejuvenation, our
+    expert therapists offer salon and mobile sessions tailored to your needs.
+    Experience visibly firmer skin, improved wellness, and a refreshed glow
+    naturally.
+  </p>
+</section>
+
+<div class="mt-6">
+  <Filter active="brows" />
+
+  <div class="flex flex-wrap justify-center gap-6 px-4">
+    <Services
+      title="The Bodyrite Signature Sculpt®️ treatments"
+      image="../images/fc336e32-e876-448a-95cb-71440c0ec39c.webp"
+      description={`
+        <p>Stimulates the lymphatic system to flush out toxins, excess fluids, and waste while using sculpting movements to reduce bloating, tighten skin, and break down fat.</p>
+      `}
+      pricesalon=""
+      filter="bodyrite"
+      active="bodyrite"
+      hideSecondItem="hidden"
+      hidePriceHome="hidden"
+      hideFirstItem="hidden"
+    />
+
+    <Services
+      title="Brazilian Lymphatic Drainage or Wood/Maderotherapy Massage"
+      image="../images/ce6b5ef3-8cca-4a19-944f-18a681ad1273.webp"
+      description={`
+        <p><strong>Area 1: Stomach, back & love handles</strong></p>
+        <p>Salon:</p>
+        <ul>
+          <li>€90 Single session</li>
+          <li>€425 Course of 5</li>
+          <li>€800 Course of 10</li>
+        </ul>
+
+        <p><strong>Area 2: Back & front of legs including bum</strong></p>
+        <p>Salon:</p>
+        <ul>
+          <li>€90Single session</li>
+          <li>€425 Course of 5</li>
+          <li>€800 Course of 10</li>
+        </ul>
+
+        <p><strong>Home:</strong></p>
+        <ul>
+          <li>€120 Single session</li>
+          <li>€550 Course of 5</li>
+          <li>€1000 Course of 10</li>
+        </ul>
+
+        <p>Stimulates the lymphatic system to flush out toxins, excess fluids, and waste while using sculpting movements to reduce bloating, tighten skin, and break down fat.</p>
+      `}
+      pricehome="50€"
+      pricesalon=""
+      filter="bodyrite"
+      active="bodyrite"
+      hideSecondItem="hidden"
+      hideFirstItem="hidden"
+    />
+
+    <Services
+      title="BRAZILIAN LYMPHATIC DRAINAGE OR WOOD/MADEROTHERAPY MASSAGE FULL BODY"
+      image="../images/694585cb-e53f-41fe-b98e-087cb08c953e.webp"
+      description={`
+        <p>FULL BODY</p>
+        <p>Time: 1.15 hour</p>
+<p><strong>Salon :</strong></p>
+<ul>
+<li>€130 Single session</li>
+<li>€600 Course of 5</li>
+  <li>
+€1100 Course of 10</li>
+  
+  
+  
+  
+</ul>
+  <p>
+    
+<strong>Mobile :</strong></p>
+<ul>
+  
+  <li>
+€180 Single session</li>
+  <li>€800 Course of 5</li>
+  <li>€1500 Course of 10</li>
+  
+</ul>
+
+
+      `}
+      pricehome="50€"
+      pricesalon=""
+      filter="bodyrite"
+      active="bodyrite"
+      hideSecondItem="hidden"
+      hideFirstItem="hidden"
+    />
+
+    <Services
+      title="LYMPHATIC DRAINAGE FULL FACE"
+      image="../images/4d4374fc-47cd-4dc3-8a3c-c28050092a1f.webp"
+      description={`
+          <p>Time: 45 mins</p>
+
+  <ul>
+    <li>Stimulates the lymphatic system</li>
+    <li>Helps reduce puffiness</li>
+    <li>Removes toxins</li>
+    <li>Improves circulation in the face</li>
+    <li>Promotes a clearer, more sculpted appearance</li>
+    <li>Enhances skin health</li>
+    <li>Leaves complexion looking refreshed and radiant</li>
+  </ul>
+
+  <p><strong>Salon:</strong> €75 per session</p>
+  <p><strong>Home:</strong> €100 per session</p>
+
+
+      `}
+      pricesalon=""
+      filter="bodyrite"
+      active="bodyrite"
+      hideSecondItem="hidden"
+      hideFirstItem="hidden"
+    />
+  </div>
+</div>
