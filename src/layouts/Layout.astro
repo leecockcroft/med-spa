@@ -17,7 +17,18 @@ import AOSInit from "../components/AOSInit.astro";
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     <meta name="viewport" content="width=device-width" />
-
+    <script>
+      var ahrefs_analytics_script = document.createElement("script");
+      ahrefs_analytics_script.async = true;
+      ahrefs_analytics_script.src = "https://analytics.ahrefs.com/analytics.js";
+      ahrefs_analytics_script.setAttribute(
+        "data-key",
+        "wEmdzuDtYXf3FMv9E6ZW2g"
+      );
+      document
+        .getElementsByTagName("head")[0]
+        .appendChild(ahrefs_analytics_script);
+    </script>
     <!-- Google Tag Manager -->
     <script>
       (function (w, d, s, l, i) {
