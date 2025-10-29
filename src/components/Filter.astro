@@ -80,6 +80,17 @@ const { active } = Astro.props;
     >
       Couple's Package
     </a>
+
+    <a
+      href="/bodyrite-signature"
+      class={`px-4 py-2 border rounded transition uppercase ${
+        active === "couplespackage"
+          ? "contact-cta "
+          : "bg-white hover:bg-blue-100 text-gray-800"
+      }`}
+    >
+      Bodyrite Signature
+    </a>
   </div>
 </div>
 
